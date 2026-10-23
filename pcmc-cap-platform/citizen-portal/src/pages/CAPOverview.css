@@ -1,0 +1,728 @@
+/* =========================
+   CAP OVERVIEW PAGE
+   ========================= */
+
+.cap-page {
+  width: 100%;
+
+  background: var(--cream);
+}
+
+
+/* =========================
+   CAP HERO
+   ========================= */
+
+.cap-hero {
+  position: relative;
+
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 90px 8%;
+
+  overflow: hidden;
+
+  background: var(--cream);
+}
+
+.cap-hero-content {
+  position: relative;
+  z-index: 3;
+
+  max-width: 760px;
+}
+
+.cap-hero-label {
+  margin-bottom: 28px;
+
+  color: var(--orange);
+
+  font-family: var(--sans);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+}
+
+.cap-hero h1 {
+  margin: 0;
+
+  color: var(--dark-teal);
+
+  font-family: var(--heading);
+
+  font-size: clamp(58px, 8vw, 105px);
+
+  font-weight: 600;
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+}
+
+.cap-hero h1 span {
+  display: inline-block;
+}
+
+.cap-hero-line {
+  width: 85px;
+  height: 4px;
+
+  margin: 35px 0 25px;
+
+  background: var(--orange);
+
+  border-radius: 3px;
+}
+
+.cap-hero p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--text-light);
+
+  font-family: var(--sans);
+
+  font-size: 17px;
+
+  line-height: 1.75;
+}
+
+.cap-hero-year {
+  position: absolute;
+
+  z-index: 2;
+
+  right: 8%;
+  top: 55px;
+
+  color: rgba(11,47,49,0.12);
+
+  font-family: var(--heading);
+
+  font-size: clamp(130px, 20vw, 280px);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  user-select: none;
+}
+
+.cap-hero-shape {
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  right: -170px;
+  bottom: -230px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 35%,
+      var(--olive-green),
+      var(--deep-green)
+    );
+
+  opacity: 0.95;
+}
+
+.cap-hero-shape::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  top: -70px;
+  left: -70px;
+
+  border-radius: 50%;
+
+  background: var(--yellow);
+
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+
+  .cap-hero {
+    min-height: 500px;
+
+    padding: 70px 7%;
+  }
+
+  .cap-hero h1 {
+    font-size: clamp(52px, 15vw, 75px);
+
+    letter-spacing: -2px;
+  }
+
+  .cap-hero p {
+    max-width: 90%;
+
+    font-size: 15px;
+  }
+
+  .cap-hero-year {
+    right: -20px;
+    top: 30px;
+
+    font-size: 130px;
+  }
+
+  .cap-hero-shape {
+    width: 300px;
+    height: 300px;
+
+    right: -150px;
+    bottom: -150px;
+  }
+}
+
+/* =========================
+   GENERAL SECTION
+   ========================= */
+
+.cap-section {
+  width: min(1180px, 90%);
+
+  margin: 0 auto;
+
+  padding: 90px 0;
+}
+
+.cap-section h2 {
+  margin: 0 0 28px;
+
+  color: var(--dark-teal);
+
+  font-family: var(--heading);
+
+  font-size: clamp(32px, 4vw, 46px);
+
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.5px;
+}
+
+.cap-section > p {
+  max-width: 850px;
+
+  margin-bottom: 18px;
+
+  color: var(--text-light);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   WHY CAP / RISK CARDS
+   ========================= */
+
+.risk-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-top: 45px;
+}
+
+.risk-card {
+  position: relative;
+
+  min-height: 220px;
+
+  padding: 28px;
+
+  background: var(--white);
+
+  border: 1px solid rgba(11, 47, 49, 0.08);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px rgba(11, 47, 49, 0.05);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.risk-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(11, 47, 49, 0.09);
+}
+
+.risk-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+
+  background: var(--olive-green);
+}
+
+.risk-card:nth-child(1)::before {
+  background: var(--orange);
+}
+
+.risk-card:nth-child(2)::before {
+  background: var(--dark-teal);
+}
+
+.risk-card:nth-child(3)::before {
+  background: var(--yellow);
+}
+
+.risk-card:nth-child(4)::before {
+  background: var(--deep-green);
+}
+
+.risk-card h3 {
+  margin: 0 0 18px;
+
+  color: var(--dark-teal);
+
+  font-family: var(--heading);
+
+  font-size: 22px;
+
+  line-height: 1.3;
+}
+
+.risk-card p {
+  margin: 0;
+
+  color: var(--text-light);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   CLIMATE FIGURES
+   ========================= */
+
+.climate-figures-section {
+  width: 100%;
+
+  padding: 100px 5%;
+
+  background: var(--dark-teal);
+
+  color: var(--cream);
+}
+
+.figures-heading {
+  width: min(1180px, 90%);
+
+  margin: 0 auto 65px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+.figures-heading h2 {
+  margin: 8px 0 0;
+
+  color: var(--cream);
+
+  font-family: var(--heading);
+
+  font-size: clamp(38px, 5vw, 58px);
+
+  line-height: 1.1;
+}
+
+.section-label {
+  margin: 0;
+
+  color: var(--warm-yellow);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.figures-intro {
+  max-width: 360px;
+
+  margin: 0;
+
+  color: rgba(247,239,202,0.65);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* numbers */
+
+.figures-grid {
+  width: min(1180px, 90%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.figure-item {
+  min-height: 245px;
+
+  padding: 20px 35px;
+
+  border-top: 1px solid rgba(247,239,202,0.2);
+
+  border-bottom: 1px solid rgba(247,239,202,0.2);
+
+  border-right: 1px solid rgba(247,239,202,0.2);
+}
+
+.figure-item:first-child {
+  border-left: 1px solid rgba(247,239,202,0.2);
+}
+
+.figure-item strong {
+  color: var(--warm-yellow);
+
+  font-family: var(--heading);
+
+  font-size: clamp(42px, 5vw, 64px);
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+.figure-unit {
+  display: inline-block;
+
+  margin-left: 7px;
+
+  color: var(--cream);
+
+  font-family: var(--heading);
+
+  font-size: 20px;
+
+  font-weight: 500;
+}
+
+.figure-item p {
+  margin: 25px 0 10px;
+
+  color: var(--cream);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.figure-item span {
+  display: block;
+
+  max-width: 190px;
+
+  color: rgba(247,239,202,0.58);
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* responsive */
+
+@media (max-width: 900px) {
+
+  .figures-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .figure-item:nth-child(3) {
+    border-left: 1px solid rgba(247,239,202,0.2);
+  }
+
+  .figures-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .climate-figures-section {
+    padding: 70px 0;
+  }
+
+  .figures-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .figure-item {
+    border-left: 1px solid rgba(247,239,202,0.2);
+
+    min-height: 200px;
+  }
+
+  .figures-heading {
+    width: 88%;
+  }
+
+  .figures-grid {
+    width: 88%;
+  }
+}
+
+/* =========================
+   GOALS
+   ========================= */
+
+.goal-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 0;
+
+  margin: 45px 0 0;
+
+  padding: 0;
+
+  list-style: none;
+
+  border-top: 1px solid rgba(11, 47, 49, 0.12);
+}
+
+.goal-list li {
+  position: relative;
+
+  padding: 24px 30px 24px 48px;
+
+  color: var(--dark-teal);
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  border-bottom: 1px solid rgba(11, 47, 49, 0.12);
+}
+
+.goal-list li::before {
+  content: "→";
+
+  position: absolute;
+
+  left: 18px;
+  top: 22px;
+
+  color: var(--orange);
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   BUDGET
+   ========================= */
+
+.budget-info {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+
+  margin-top: 40px;
+}
+
+.budget-card {
+  position: relative;
+
+  padding: 35px;
+
+  background: var(--white);
+
+  border-radius: 18px;
+
+  border: 1px solid rgba(11, 47, 49, 0.08);
+
+  box-shadow:
+    0 8px 25px rgba(11, 47, 49, 0.05);
+
+  overflow: hidden;
+}
+
+.budget-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 5px;
+  height: 100%;
+
+  background: var(--orange);
+}
+
+.budget-card:nth-child(2)::before {
+  background: var(--olive-green);
+}
+
+.budget-card h3 {
+  margin: 0 0 15px;
+
+  color: var(--dark-teal);
+
+  font-family: var(--heading);
+
+  font-size: 24px;
+}
+
+.budget-card p {
+  margin: 0 0 20px;
+
+  color: var(--text-light);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.budget-card span {
+  display: inline-block;
+
+  padding: 6px 11px;
+
+  border-radius: 20px;
+
+  background: var(--cream);
+
+  color: var(--brown);
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .risk-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .goal-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .cap-hero {
+    min-height: 450px;
+
+    padding: 70px 7%;
+  }
+
+  .cap-hero h1 {
+    font-size: clamp(40px, 12vw, 55px);
+  }
+
+  .cap-hero p {
+    font-size: 15px;
+  }
+
+  .cap-section {
+    width: 88%;
+
+    padding: 65px 0;
+  }
+
+  .risk-grid {
+    grid-template-columns: 1fr;
+
+    margin-top: 35px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    min-height: 200px;
+  }
+
+  .budget-info {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-card {
+    padding: 28px;
+  }
+}

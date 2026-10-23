@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.0",
+    "motion": "^13.4.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "prettier": "^3.9.10"
+  },
+  "scripts": {
+    "install:apps": "npm --prefix citizen-portal ci && npm --prefix admin-panel ci",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm --prefix citizen-portal run build && npm --prefix admin-panel run build",
+    "lint": "npm --prefix citizen-portal run lint && npm --prefix admin-panel run lint",
+    "test:e2e": "playwright test",
+    "format:check": "prettier --check shared admin-panel/src citizen-portal/src scripts tests playwright.config.js",
+    "build:vercel": "node scripts/build-vercel.mjs"
+  }
+}

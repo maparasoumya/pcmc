@@ -1,0 +1,220 @@
+.climate-map-page {
+  min-height: 100vh;
+  background: var(--cream);
+  color: var(--text);
+}
+
+/* header */
+
+.map-header {
+  position: relative;
+  padding: 65px 8% 55px;
+  text-align: center;
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.map-header::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(137, 149, 54, 0.14);
+  top: -120px;
+  left: -70px;
+}
+
+.map-header::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(232, 93, 4, 0.12);
+  right: -50px;
+  bottom: -75px;
+}
+
+.map-header h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 12px;
+  color: var(--dark-teal);
+  font-family: var(--heading);
+  font-size: clamp(40px, 5vw, 60px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.map-header p {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-light);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* main map area */
+
+.map-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 5% 65px;
+}
+
+/* layer controls */
+
+.map-controls {
+  margin-bottom: 16px;
+  padding: 20px 24px;
+  background: var(--dark-teal);
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(11, 47, 49, 0.10);
+}
+
+.map-controls h3 {
+  margin: 0 0 14px;
+  color: var(--warm-yellow);
+  font-family: var(--heading);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.map-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 7px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 13px;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.map-controls label:hover {
+  background: rgba(255, 186, 8, 0.16);
+  border-color: var(--yellow);
+}
+
+.map-controls input {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--orange);
+  cursor: pointer;
+}
+
+/* risk panels */
+
+.flood-risk-panel {
+  margin-bottom: 16px;
+  padding: 18px 24px;
+  background: var(--dark-teal);
+  border-radius: 14px;
+  color: var(--white);
+  box-shadow: 0 8px 22px rgba(11, 47, 49, 0.10);
+}
+
+.flood-risk-panel h3 {
+  margin: 0 0 12px;
+  color: var(--warm-yellow);
+  font-family: var(--heading);
+  font-size: 21px;
+}
+
+.flood-risk-area {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.09);
+  font-size: 13px;
+}
+
+.flood-risk-panel small {
+  display: block;
+  max-width: 850px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* map */
+
+.climate-map {
+  width: 100%;
+  height: 600px;
+  border: 1px solid rgba(11, 47, 49, 0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(11, 47, 49, 0.14);
+}
+
+/* responsive */
+
+@media (max-width: 900px) {
+  .map-header {
+    padding: 55px 7% 45px;
+  }
+
+  .map-container {
+    padding: 0 4% 55px;
+  }
+
+  .map-controls label {
+    margin-right: 7px;
+  }
+
+  .climate-map {
+    height: 520px;
+  }
+}
+
+@media (max-width: 700px) {
+  .map-header {
+    padding: 50px 6% 40px;
+  }
+
+  .map-header h1 {
+    font-size: 40px;
+  }
+
+  .map-header p {
+    font-size: 15px;
+  }
+
+  .map-container {
+    padding: 0 15px 45px;
+  }
+
+  .map-controls {
+    padding: 18px;
+  }
+
+  .map-controls label {
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .flood-risk-panel {
+    padding: 18px;
+  }
+
+  .climate-map {
+    height: 450px;
+    border-radius: 12px;
+  }
+}

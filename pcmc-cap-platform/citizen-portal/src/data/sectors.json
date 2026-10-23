@@ -1,0 +1,202 @@
+[
+  {
+    "id": "rising-heat",
+    "title": "Rising Heat",
+    "icon": "🔥",
+    "currentScenario": "Temperatures in Pimpri Chinchwad are rising steadily. Over the last 50 years annual mean temperature has increased by 1°C. Summers are becoming longer and hotter, with many areas crossing 40°C.",
+    "currentScenarioMr": "पिंपरी-चिंचवडमध्ये तापमान सातत्याने वाढत आहे. गेल्या ५० वर्षांत वार्षिक सरासरी तापमानात १°C वाढ झाली आहे. उन्हाळा अधिक लांब आणि उष्ण होत असून, अनेक भागांमध्ये तापमान ४०°C पेक्षा जास्त होत आहे.",
+    "whyItMatters":"Rising heat can increase heat stress and health risks, especially for children, older adults, outdoor workers, delivery workers, street vendors, and people living in poorly ventilated homes.",
+    "relevantAreas":[
+      "Talawade",
+      "Chikhali",
+      "Bhosari"
+    ],
+    "plannedActions": [
+      "Harit Setu Initiative: shaded, safe walking and cycling networks",
+      "Waste to Wonder: theme parks made from scrap and waste materials",
+      "Rejuvenation and restoration of rivers like Indrayani, Mula, and Pawan",
+      "Develop Sponge Streets and Green Mobility Corridors",
+      "Increase nature-based approaches like urban forestry and green barriers"
+    ],
+    "citizenActions": [
+      "Plant shade trees",
+      "Protect local parks and green spaces",
+      "Stay hydrated during heatwaves",
+      "Help vulnerable people - outdoor workers, elderly, children",
+      "Reduce unnecessary electricity consumption"
+    ]
+  },
+  {
+    "id": "flooding-water-logging",
+    "title": "Flooding and Water Logging",
+    "icon": "🌊",
+    "currentScenario": "Heavy rainfall events are increasing due to climate change. Many parts of the city now face regular waterlogging and flooding during monsoons. Informal settlements are especially vulnerable.",
+    "currentScenarioMr": "हवामान बदलामुळे मुसळधार पावसाच्या घटनांमध्ये वाढ होत आहे. पावसाळ्यात शहरातील अनेक भागांमध्ये नियमितपणे पाणी साचणे आणि पूरस्थिती निर्माण होते. अनौपचारिक वस्त्या विशेषतः यासाठी अधिक असुरक्षित आहेत.",
+    "whyItMatters":"Heavy rainfall and changes in rainfall patterns can cause flooding and water logging, affecting homes, roads, public infrastructure, and daily travel.",
+    "relevantAreas":[
+      "Pimpri",
+      "Chinchwad",
+      "Dapodi",
+      "Pimple Gurav",
+      "Nadhe Nagar",
+      "Old Sangvi",
+      "Akurdi–Chikhali Road"
+    ],
+    "plannedActions": [
+      "Develop resilient urban drainage system integrating stormwater management",
+      "Identify and map flooding spots, implement measures to reduce impact",
+      "Nature-positive improvements along Nalla corridors",
+      "Integrate hills and open spaces into natural drainage pathways",
+      "Develop sponge areas in at least 10 locations"
+    ],
+    "citizenActions": [
+      "Avoid waste dumps that block drains and stormwater",
+      "Keep surroundings clean",
+      "Rainwater harvesting",
+      "Participate in local flood awareness activities"
+    ]
+  },
+  {
+    "id": "solid-waste-management",
+    "title": "Solid Waste Management",
+    "icon": "♻️",
+    "currentScenario": "The city generates about 1400 tons of waste every day. Bio-degradable waste is 38% and plastic waste is 35%. By 2056 the city will generate over 8000 tons per day.",
+    "currentScenarioMr": "शहरात दररोज सुमारे १४०० टन कचरा निर्माण होतो. यापैकी ३८% जैवविघटनशील कचरा आणि ३५% प्लास्टिक कचरा आहे. २०५६ पर्यंत शहरात दररोज ८००० टनांपेक्षा जास्त कचरा निर्माण होण्याची शक्यता आहे.",
+    "whyItMatters":"Poor waste management can increase pollution, create health risks, block drainage systems, and contribute to greenhouse gas emissions. Proper segregation, collection, and processing help keep the city cleaner and more resilient.",
+    "relevantAreas":[
+      "City-wide"
+    ],
+    "plannedActions": [
+      "Safai Mitra trainings to professionalize sanitation services",
+      "Move towards a circular economy: Reduce, Reuse, Recycle",
+      "Waste to Wealth ecosystem through low-carbon waste system",
+      "Encourage decentralised, technology-enabled waste processing"
+    ],
+    "citizenActions": [
+      "Avoid littering",
+      "Segregate waste daily",
+      "Compost kitchen waste",
+      "Reduce single-use plastic",
+      "Handover e-waste to authorized collectors"
+    ]
+  },
+  {
+    "id": "green-city-biodiversity",
+    "title": "Green City and Biodiversity",
+    "icon": "🌳",
+    "currentScenario": "Several trees such as Vad, Peepul, Umber, Chafa and Rui are found within PCMC. 50% of the city faces extreme heat and green corridors are shrinking.",
+    "currentScenarioMr": "पिंपरी-चिंचवडमध्ये वड, पिंपळ, उंबर, चाफा आणि रुई यांसारखी अनेक झाडे आढळतात. शहरातील ५०% भागाला तीव्र उष्णतेचा सामना करावा लागतो आणि हिरवे मार्ग कमी होत आहेत.",
+    "whyItMatters":"Trees, parks, green spaces, and nature-based solutions can help reduce urban heat, improve air quality, absorb rainwater, support biodiversity, and improve people's health and well-being.",
+    "relevantAreas":[
+      "City-wide"
+    ],
+    "plannedActions": [
+      "Increase urban green cover through tree plantation",
+      "Develop green infrastructure: parks, urban gardens, green roofs, corridors",
+      "Promote cool roofing and climate-sensitive planning",
+      "Reduce Urban Heat Island Effect through nature-based solutions"
+    ],
+    "citizenActions": [
+      "Tree plantation drives with community and senior citizens' clubs",
+      "Tree audits",
+      "Mini-nurseries through Eco Clubs",
+      "Support plantation of native species"
+    ]
+  },
+  {
+    "id": "sustainable-mobility",
+    "title": "Sustainable Mobility",
+    "icon": "🚌",
+    "currentScenario": "The city has over 19 lakh 2-wheelers and 5.4 lakh cars, while public buses are less than 2000. Safety concerns for walking and cycling persist.",
+    "currentScenarioMr": "शहरात १९ लाखांहून अधिक दुचाकी आणि ५.४ लाख कार आहेत, तर सार्वजनिक बसची संख्या २००० पेक्षा कमी आहे. पायी चालणे आणि सायकल चालवण्यासाठीच्या सुरक्षिततेच्या समस्या अजूनही आहेत.",
+    "whyItMatters":"Transport affects air pollution, greenhouse gas emissions, road safety, travel time, and quality of life. Walking, cycling, public transport, shared mobility, and cleaner vehicles can help create a healthier and more sustainable city.",
+    "relevantAreas":[
+      "City-wide"
+    ],
+    "plannedActions": [
+      "Hari Setu: connects new Metro lines, BRTS, and railway station",
+      "Establish Low Emission Zone (LEZ) in the entire Municipal area",
+      "22 new EV charging stations for 50,000+ electric vehicles",
+      "Pimpri Market to be vehicle-free and pedestrian-friendly zone"
+    ],
+    "citizenActions": [
+      "Cycle for short trips",
+      "Use buses and metro",
+      "Walk whenever possible",
+      "Carpool and ride sharing",
+      "Switch to electric vehicles"
+    ]
+  },
+  {
+    "id": "renewable-energy",
+    "title": "Renewable Energy & Energy Use",
+    "icon": "☀️",
+    "currentScenario": "Buildings and energy sectors contributed about 66% of PCMC's total GHG emissions in 2025. Low adoption of solar energy remains a challenge.",
+    "currentScenarioMr": "२०२५ मध्ये PCMC च्या एकूण हरितगृह वायू उत्सर्जनापैकी सुमारे ६६% उत्सर्जन इमारती आणि ऊर्जा क्षेत्रातून झाले. सौर ऊर्जेचा कमी वापर हे अजूनही एक आव्हान आहे.",
+    "whyItMatters":"Energy use in buildings is a major source of greenhouse gas emissions. Using renewable energy and improving energy efficiency can reduce emissions, lower energy use, and support a cleaner city.",
+    "relevantAreas":[
+      "City-wide"
+    ],
+    "plannedActions": [
+      "Energy efficiency buildings with GIRHA/SVAGRIHA certification incentives",
+      "Solar installation of capacity 11,614 kWh",
+      "Waste-to-energy plant of 14MW capacity at Moshi",
+      "Plan for 100% solar powered PCMC buildings",
+      "Annual energy audit of municipal buildings from 2026"
+    ],
+    "citizenActions": [
+      "Install rooftop solar panels where possible",
+      "Use energy-efficient appliances and LED lighting",
+      "Reduce unnecessary electricity consumption",
+      "Adopt electric vehicles and clean energy solutions"
+    ]
+  },
+  {
+    "id": "water-security-conservation",
+    "title": "Water Security and Conservation",
+    "icon": "💧",
+    "currentScenario": "Challenges include groundwater depletion, irregular rainfall, rising demand, and water wastage. Shrinking recharge areas add pressure.",
+    "currentScenarioMr": "भूजल पातळी कमी होणे, अनियमित पाऊस, वाढती मागणी आणि पाण्याचा अपव्यय ही प्रमुख आव्हाने आहेत. भूजल पुनर्भरण क्षेत्र कमी होत असल्याने पाण्याच्या स्रोतांवर अधिक दबाव येत आहे.",
+    "whyItMatters":"Climate change and changing rainfall patterns can increase water shortages, groundwater depletion, and pressure on water resources. Conserving water, harvesting rainwater, recharging groundwater, and reusing treated wastewater can improve water security.",
+    "relevantAreas":[
+      "City-wide"
+    ],
+    "plannedActions": [
+      "Increase wastewater recycling with target of 100 MLD by 2035",
+      "Improve stormwater management and flood resilience",
+      "Reduce water losses through leak detection",
+      "Promote rainwater harvesting and groundwater recharge",
+      "Restore and rejuvenate Pavana, Mula and Indrayani Rivers"
+    ],
+    "citizenActions": [
+      "Repair leaky taps",
+      "Take shorter showers or bucket baths",
+      "Install rainwater harvesting systems",
+      "Establish wastewater treatment at housing societies"
+    ]
+  },
+  {
+    "id": "clean-air-healthy-life",
+    "title": "Clean Air, Healthy Life",
+    "icon": "🌫️",
+    "currentScenario": "Pollution from PM2.5 and PM10 particles often crosses safe limits, especially in winter when pollutants remain close to the ground.",
+    "currentScenarioMr": "PM2.5 आणि PM10 कणांमुळे होणारे प्रदूषण अनेकदा सुरक्षित मर्यादेपेक्षा जास्त असते. विशेषतः हिवाळ्यात प्रदूषक जमिनीजवळ राहिल्यामुळे ही समस्या अधिक जाणवते.",
+    "whyItMatters":"Air pollution can affect people's health and quality of life. Traffic, industry, waste burning, and construction can contribute to poor air quality, while cleaner transport, dust control, and more greenery can help reduce pollution.",
+    "relevantAreas":[
+      "City-wide"
+    ],
+    "plannedActions": [
+      "Implement GRAP (Graded Response Action Plan) for air pollution control",
+      "Promote cleaner fuels (PNG, LPG), EVs, and CNG",
+      "Promote shift to public transport including Metro connectivity",
+      "Enforce dust-suppression at construction sites"
+    ],
+    "citizenActions": [
+      "Walk or cycle for short trips",
+      "Use public transport",
+      "Maintain vehicles properly",
+      "Proper waste management, no burning of waste",
+      "Plant and protect trees"
+    ]
+  }
+]

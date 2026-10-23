@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.sqlite3
+media/
+.env
+.env.*
+!.env.example
+!.env.production.example
+.vscode/

@@ -1,0 +1,360 @@
+.involved-page {
+  min-height: 100vh;
+  background: var(--cream);
+  color: var(--text);
+}
+
+/* hero */
+
+.involved-hero {
+  position: relative;
+  padding: 70px 8% 60px;
+  background: var(--dark-teal);
+  text-align: center;
+  overflow: hidden;
+}
+
+.involved-hero::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: rgba(137, 149, 54, 0.19);
+  top: -240px;
+  left: -100px;
+}
+
+.involved-hero::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(232, 93, 4, 0.12);
+  right: -80px;
+  bottom: -145px;
+}
+
+.hero-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  border-radius: 25px;
+  color: var(--warm-yellow);
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.involved-hero h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 12px;
+  color: var(--white);
+  font-family: var(--heading);
+  font-size: clamp(44px, 6vw, 70px);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.involved-hero p {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.74);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* normal sections */
+
+.involved-section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 50px 5% 15px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 13px;
+  margin-bottom: 24px;
+}
+
+.section-heading span {
+  color: var(--orange);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: var(--dark-teal);
+  font-family: var(--heading);
+  font-size: 31px;
+  font-weight: 600;
+}
+
+/* cards */
+
+.involved-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.involved-card {
+  position: relative;
+  min-height: 0;
+  padding: 23px 24px;
+  background: var(--white);
+  border: 1px solid rgba(11, 47, 49, 0.09);
+  border-left: 4px solid var(--olive-green);
+  border-radius: 9px;
+  box-shadow: 0 4px 14px rgba(11, 47, 49, 0.045);
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.involved-card::after {
+  display: none;
+}
+
+.involved-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(11, 47, 49, 0.08);
+}
+
+.card-icon {
+  position: relative;
+  z-index: 1;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+  border-radius: 10px;
+  background: var(--cream);
+  font-size: 21px;
+}
+
+.involved-card h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 8px;
+  color: var(--dark-teal);
+  font-family: var(--heading);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.involved-card p {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 12px;
+  color: var(--text-light);
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.involved-card span,
+.event-placeholder span,
+.registration-content span {
+  position: relative;
+  z-index: 1;
+  color: var(--text-light);
+  font-family: var(--sans);
+  font-size: 11px;
+  font-style: italic;
+}
+
+/* card accents */
+
+.suggestion-card {
+  border-left-color: var(--orange);
+}
+
+.query-card {
+  border-left-color: var(--olive-green);
+}
+
+.community-card:nth-child(1) {
+  border-left-color: var(--deep-green);
+}
+
+.community-card:nth-child(2) {
+  border-left-color: var(--yellow);
+}
+
+/* events */
+
+.events-section {
+  margin-top: 35px;
+  padding: 60px 8%;
+  background: var(--dark-teal);
+}
+
+.events-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.light-heading h2 {
+  color: var(--white);
+}
+
+.light-heading span {
+  color: var(--warm-yellow);
+}
+
+.event-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 25px 27px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+}
+
+.event-icon {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--orange);
+  font-size: 25px;
+}
+
+.event-placeholder h3 {
+  margin: 0 0 7px;
+  color: var(--warm-yellow);
+  font-family: var(--heading);
+  font-size: 22px;
+}
+
+.event-placeholder p {
+  max-width: 750px;
+  margin: 0 0 8px;
+  color: rgba(255, 255, 255, 0.70);
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.event-placeholder span {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+/* community */
+
+.community-section {
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+
+/* registration */
+
+.registration-section {
+  padding: 55px 8% 65px;
+  background: var(--cream);
+  text-align: center;
+}
+
+.registration-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.registration-icon {
+  margin-bottom: 8px;
+  font-size: 34px;
+}
+
+.registration-content h2 {
+  margin: 0 0 10px;
+  color: var(--dark-teal);
+  font-family: var(--heading);
+  font-size: 31px;
+}
+
+.registration-content p {
+  max-width: 600px;
+  margin: 0 auto 12px;
+  color: var(--text-light);
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* responsive */
+
+@media (max-width: 800px) {
+  .involved-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-placeholder {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .involved-hero {
+    padding: 55px 6% 50px;
+  }
+
+  .involved-hero h1 {
+    font-size: 48px;
+  }
+
+  .involved-hero p {
+    font-size: 15px;
+  }
+
+  .involved-section {
+    padding: 45px 18px 15px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .involved-card {
+    padding: 21px;
+  }
+
+  .events-section {
+    margin-top: 25px;
+    padding: 50px 18px;
+  }
+
+  .event-placeholder {
+    flex-direction: column;
+    padding: 23px;
+  }
+
+  .registration-section {
+    padding: 50px 18px 60px;
+  }
+
+  .registration-content h2 {
+    font-size: 28px;
+  }
+}

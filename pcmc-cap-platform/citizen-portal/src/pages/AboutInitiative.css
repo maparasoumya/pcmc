@@ -1,0 +1,124 @@
+
+.about-initiative-page {
+  min-height: 70vh;
+  background: var(--cream);
+  color: var(--text-dark);
+}
+
+.about-initiative-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 85px 8%;
+  background: var(--cream);
+}
+
+.about-initiative-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+}
+
+.about-initiative-label,
+.about-initiative-eyebrow {
+  margin: 0 0 14px;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-initiative-hero h1 {
+  max-width: 750px;
+  margin: 0;
+  color: var(--dark-teal);
+  font-family: var(--heading);
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.15;
+}
+
+.about-initiative-hero-content > p:last-child {
+  max-width: 680px;
+  margin: 24px 0 0;
+  color: var(--text-light);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about-initiative-line {
+  width: 70px;
+  height: 4px;
+  margin-top: 24px;
+  background: var(--orange);
+}
+
+.about-initiative-shape {
+  position: absolute;
+  top: -95px;
+  right: -70px;
+  width: 300px;
+  height: 300px;
+  border: 45px solid rgba(137, 149, 54, 0.13);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.about-initiative-section {
+  padding: 55px 8%;
+}
+
+.about-initiative-section h2 {
+  margin: 0 0 28px;
+  color: var(--dark-teal);
+  font-family: var(--heading);
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.25;
+}
+
+.about-initiative-content {
+  max-width: 1000px;
+  padding: 30px;
+  border: 1px dashed rgba(11, 47, 49, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.about-initiative-content h3 {
+  margin: 0 0 12px;
+  color: var(--deep-green);
+  font-size: 19px;
+}
+
+.about-initiative-content p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-initiative-secondary {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+@media (max-width: 600px) {
+  .about-initiative-hero {
+    padding: 60px 7%;
+  }
+
+  .about-initiative-shape {
+    top: -60px;
+    right: -150px;
+    width: 230px;
+    height: 230px;
+    border-width: 30px;
+  }
+
+  .about-initiative-section {
+    padding: 40px 7%;
+  }
+
+  .about-initiative-content {
+    padding: 22px;
+  }
+}
+
