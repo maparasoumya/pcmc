@@ -17,7 +17,6 @@ import { useState } from "react";
 
 import pedestrianStreets from "../data/pedestrian-streets";
 import floodRiskAreas from "../data/flood-risk";
-import heatRiskAreas from "../data/heat-risk";
 import greenSpaces from "../data/green-spaces";
 import pcmcGIS from "../data/pcmc-gis";
 import wasteFacilities from "../data/waste-facilities";
@@ -29,19 +28,16 @@ import mobilityStations from "../data/mobility";
 L.Marker.prototype.options.icon=L.icon({iconUrl:markerUrl,shadowUrl,iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]});
 function validPoint(point){return Array.isArray(point)&&point.length===2&&point.every(value=>typeof value==='number'&&Number.isFinite(value))&&Math.abs(point[0])<=90&&Math.abs(point[1])<=180;}
 const floodAreas=floodRiskAreas.map(area=>typeof area==='string'?{name:area}:area);
-const heatAreas=heatRiskAreas.map(area=>typeof area==='string'?{name:area}:area);
 export default function ClimateMap({ language }) {
   const t = translations[language];
   const remote=useRemote("publications/?kind=map");
 
   const [layers, setLayers] = useState({
     flooding: false,
-    heat: false,
     greenSpaces: false,
     municipalBuildings: false,
     pedestrianStreets: false,
     floodRisk: false,
-    heatRisk: false,
     water: false,
     waste: false,
     mobility: false,
@@ -79,14 +75,6 @@ export default function ClimateMap({ language }) {
             {t.layerFlooding}
           </label>
 
-          <label>
-            <input
-              type="checkbox"
-              checked={layers.heatRisk}
-              onChange={() => toggleLayer("heatRisk")}
-            />
-            {t.layerHeat}
-          </label>
 
           <label>
             <input
@@ -124,14 +112,6 @@ export default function ClimateMap({ language }) {
             {t.layerFloodRisk}
           </label>
 
-          <label>
-            <input
-              type="checkbox"
-              checked={layers.heatRisk}
-              onChange={() => toggleLayer("heatRisk")}
-            />
-            {t.layerHeatRisk}
-          </label>
 
           <label>
             <input
@@ -228,30 +208,6 @@ export default function ClimateMap({ language }) {
             </Marker>
 
           ))}
-          {/* HEAT RISK AREAS */}
-
-          {layers.heatRisk &&
-            heatAreas.filter(area=>validPoint(area.coordinates)).map((area) => (
-
-              <Marker
-                key={area.name}
-                position={area.coordinates}
-              >
-                <Popup>
-                  <strong> {area.name}</strong>
-
-                  <br />
-
-                  Heat Risk Area
-
-                  <br />
-
-                  Coordinates: {area.coordinates[0]}, {area.coordinates[1]}
-                </Popup>
-              </Marker>
-
-            ))
-          }
           {/* WASTE INFRASTRUCTURE */}
 
           {layers.waste &&

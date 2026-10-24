@@ -11,12 +11,6 @@ const mapLayers = [
     color: "#E8F0FA",
   },
   {
-    name: "Heat",
-    icon: "",
-    description: "Document heat-affected areas and local observations.",
-    color: "#FFF1DF",
-  },
-  {
     name: "Green Spaces",
     icon: "",
     description: "Manage parks, green cover, and open spaces.",
