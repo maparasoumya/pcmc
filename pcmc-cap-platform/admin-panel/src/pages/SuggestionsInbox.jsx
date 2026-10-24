@@ -28,7 +28,7 @@ const buttonBase = {
   border: "none",
   borderRadius: "9px",
   padding: "10px 13px",
-  fontSize: "12px",
+  fontSize: "14px",
   fontWeight: 750,
   fontFamily: "inherit",
   cursor: "pointer",
@@ -42,7 +42,7 @@ const inputStyle = {
   borderRadius: "9px",
   background: C.white,
   color: C.dark,
-  fontSize: "13px",
+  fontSize: "15px",
   fontFamily: "inherit",
   outlineColor: C.fern,
 };
@@ -212,9 +212,9 @@ export default function SuggestionsInbox() {
   }
 
   const statCards = [
-    { label: "Total Submissions", value: suggestions.length, icon: "💬" },
-    { label: "New", value: newCount, icon: "📩" },
-    { label: "Under Review", value: reviewCount, icon: "🔎" },
+    { label: "Total Submissions", value: suggestions.length, icon: "" },
+    { label: "New", value: newCount, icon: "" },
+    { label: "Under Review", value: reviewCount, icon: "" },
     { label: "Responded", value: respondedCount, icon: "✓" },
   ];
 
@@ -240,7 +240,7 @@ export default function SuggestionsInbox() {
               borderRadius: "20px",
               background: C.greenBg,
               color: C.greenText,
-              fontSize: "11px",
+              fontSize: "13px",
               fontWeight: 800,
               letterSpacing: "0.6px",
             }}
@@ -252,7 +252,7 @@ export default function SuggestionsInbox() {
             style={{
               margin: "0 0 10px",
               color: C.dark,
-              fontSize: "36px",
+              fontSize: "38px",
               lineHeight: 1.2,
               fontWeight: 750,
               letterSpacing: "-0.5px",
@@ -266,7 +266,7 @@ export default function SuggestionsInbox() {
               margin: 0,
               maxWidth: "760px",
               color: C.fern,
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: 1.7,
             }}
           >
@@ -284,7 +284,7 @@ export default function SuggestionsInbox() {
               borderRadius: "10px",
               background: C.redBg,
               color: C.red,
-              fontSize: "13px",
+              fontSize: "15px",
             }}
           >
             {serverState.error}
@@ -304,7 +304,7 @@ export default function SuggestionsInbox() {
               borderRadius: "10px",
               background: C.greenBg,
               color: C.greenText,
-              fontSize: "13px",
+              fontSize: "15px",
             }}
           >
             <span>{notice}</span>
@@ -349,21 +349,13 @@ export default function SuggestionsInbox() {
               onMouseEnter={cardMouseEnter}
               onMouseLeave={cardMouseLeave}
             >
-              <div
-                style={{
-                  fontSize: "22px",
-                  marginBottom: "12px",
-                  lineHeight: 1,
-                }}
-              >
-                {stat.icon}
-              </div>
+              
 
               <p
                 style={{
                   margin: "0 0 12px",
                   color: C.fern,
-                  fontSize: "13px",
+                  fontSize: "15px",
                   fontWeight: 400,
                 }}
               >
@@ -373,7 +365,7 @@ export default function SuggestionsInbox() {
               <div
                 style={{
                   color: C.dark,
-                  fontSize: "27px",
+                  fontSize: "28px",
                   lineHeight: 1.2,
                   fontWeight: 400,
                   letterSpacing: 0,
@@ -410,12 +402,12 @@ export default function SuggestionsInbox() {
                   style={{
                     margin: "0 0 5px",
                     color: C.dark,
-                    fontSize: "21px",
+                    fontSize: "23px",
                   }}
                 >
                   Inbox
                 </h2>
-                <p style={{ margin: 0, color: C.muted, fontSize: "12px" }}>
+                <p style={{ margin: 0, color: C.muted, fontSize: "14px" }}>
                   {filteredSuggestions.length} result(s)
                 </p>
               </div>
@@ -444,7 +436,7 @@ export default function SuggestionsInbox() {
                 gap: "7px",
                 marginBottom: "13px",
                 color: C.dark,
-                fontSize: "12px",
+                fontSize: "14px",
                 fontWeight: 700,
               }}
             >
@@ -463,7 +455,7 @@ export default function SuggestionsInbox() {
                 gap: "7px",
                 marginBottom: "18px",
                 color: C.dark,
-                fontSize: "12px",
+                fontSize: "14px",
                 fontWeight: 700,
               }}
             >
@@ -492,17 +484,15 @@ export default function SuggestionsInbox() {
                   borderRadius: "12px",
                 }}
               >
-                <div style={{ fontSize: "28px", marginBottom: "10px" }}>
-                  💬
-                </div>
-                <strong style={{ color: C.dark, fontSize: "14px" }}>
+                
+                <strong style={{ color: C.dark, fontSize: "16px" }}>
                   No submissions found
                 </strong>
                 <p
                   style={{
                     margin: "7px 0 0",
                     color: C.muted,
-                    fontSize: "12px",
+                    fontSize: "14px",
                     lineHeight: 1.6,
                   }}
                 >
@@ -554,7 +544,7 @@ export default function SuggestionsInbox() {
                       >
                         <strong
                           style={{
-                            fontSize: "13px",
+                            fontSize: "15px",
                             lineHeight: 1.5,
                             overflowWrap: "anywhere",
                           }}
@@ -568,7 +558,7 @@ export default function SuggestionsInbox() {
                             flexShrink: 0,
                             padding: "5px 7px",
                             borderRadius: "20px",
-                            fontSize: "10px",
+                            fontSize: "12px",
                             fontWeight: 800,
                           }}
                         >
@@ -580,7 +570,7 @@ export default function SuggestionsInbox() {
                         style={{
                           margin: "9px 0 7px",
                           color: C.fern,
-                          fontSize: "11px",
+                          fontSize: "13px",
                         }}
                       >
                         {item.category} · {item.name}
@@ -590,7 +580,7 @@ export default function SuggestionsInbox() {
                         style={{
                           margin: 0,
                           color: C.muted,
-                          fontSize: "12px",
+                          fontSize: "14px",
                           lineHeight: 1.6,
                         }}
                       >
@@ -606,7 +596,7 @@ export default function SuggestionsInbox() {
                           gap: "8px",
                           marginTop: "11px",
                           color: C.muted,
-                          fontSize: "10px",
+                          fontSize: "12px",
                         }}
                       >
                         <span>{formatDate(item.createdAt)}</span>
@@ -636,14 +626,12 @@ export default function SuggestionsInbox() {
                   textAlign: "center",
                 }}
               >
-                <div style={{ fontSize: "34px", marginBottom: "12px" }}>
-                  👈
-                </div>
+                
                 <h2
                   style={{
                     margin: "0 0 8px",
                     color: C.dark,
-                    fontSize: "20px",
+                    fontSize: "22px",
                   }}
                 >
                   Suggestion Details
@@ -653,7 +641,7 @@ export default function SuggestionsInbox() {
                     maxWidth: "300px",
                     margin: "0 auto",
                     color: C.muted,
-                    fontSize: "13px",
+                    fontSize: "15px",
                     lineHeight: 1.7,
                   }}
                 >
@@ -677,7 +665,7 @@ export default function SuggestionsInbox() {
                       style={{
                         margin: "0 0 7px",
                         color: C.fern,
-                        fontSize: "11px",
+                        fontSize: "13px",
                         fontWeight: 800,
                         letterSpacing: "0.6px",
                       }}
@@ -689,7 +677,7 @@ export default function SuggestionsInbox() {
                       style={{
                         margin: 0,
                         color: C.dark,
-                        fontSize: "22px",
+                        fontSize: "24px",
                         lineHeight: 1.4,
                         overflowWrap: "anywhere",
                       }}
@@ -722,7 +710,7 @@ export default function SuggestionsInbox() {
                       borderRadius: "8px",
                       background: C.amberBg,
                       color: C.amberText,
-                      fontSize: "11px",
+                      fontSize: "13px",
                       lineHeight: 1.6,
                     }}
                   >
@@ -761,7 +749,7 @@ export default function SuggestionsInbox() {
                         style={{
                           margin: "0 0 6px",
                           color: C.muted,
-                          fontSize: "10px",
+                          fontSize: "12px",
                         }}
                       >
                         {label}
@@ -769,7 +757,7 @@ export default function SuggestionsInbox() {
                       <strong
                         style={{
                           color: C.dark,
-                          fontSize: "12px",
+                          fontSize: "14px",
                           lineHeight: 1.5,
                           overflowWrap: "anywhere",
                         }}
@@ -785,7 +773,7 @@ export default function SuggestionsInbox() {
                     style={{
                       margin: "0 0 9px",
                       color: C.dark,
-                      fontSize: "14px",
+                      fontSize: "16px",
                     }}
                   >
                     Citizen
@@ -794,7 +782,7 @@ export default function SuggestionsInbox() {
                     style={{
                       margin: "0 0 5px",
                       color: C.dark,
-                      fontSize: "13px",
+                      fontSize: "15px",
                     }}
                   >
                     {selectedSuggestion.name}
@@ -803,7 +791,7 @@ export default function SuggestionsInbox() {
                     style={{
                       margin: 0,
                       color: C.muted,
-                      fontSize: "12px",
+                      fontSize: "14px",
                       overflowWrap: "anywhere",
                     }}
                   >
@@ -816,7 +804,7 @@ export default function SuggestionsInbox() {
                     style={{
                       margin: "0 0 9px",
                       color: C.dark,
-                      fontSize: "14px",
+                      fontSize: "16px",
                     }}
                   >
                     Message
@@ -828,7 +816,7 @@ export default function SuggestionsInbox() {
                       borderRadius: "10px",
                       background: C.bg,
                       color: C.dark,
-                      fontSize: "13px",
+                      fontSize: "15px",
                       lineHeight: 1.8,
                       whiteSpace: "pre-wrap",
                       overflowWrap: "anywhere",
@@ -838,14 +826,14 @@ export default function SuggestionsInbox() {
                   </p>
                 </div>
 
-                <label style={{display:'grid',gap:8,color:C.dark,fontWeight:700,fontSize:12}}>Internal staff notes<textarea rows={3} value={noteDraft.id===selectedSuggestion.id?noteDraft.text:selectedSuggestion.staff_notes||''} onChange={event=>setNoteDraft({id:selectedSuggestion.id,text:event.target.value})} style={inputStyle}/></label>
+                <label style={{display:'grid',gap:8,color:C.dark,fontWeight:700,fontSize:14}}>Internal staff notes<textarea rows={3} value={noteDraft.id===selectedSuggestion.id?noteDraft.text:selectedSuggestion.staff_notes||''} onChange={event=>setNoteDraft({id:selectedSuggestion.id,text:event.target.value})} style={inputStyle}/></label>
                 <button type="button" style={{...buttonBase,background:C.dark,color:C.white,margin:'12px 0'}} onClick={async()=>{try{await setSuggestions(rows=>rows.map(row=>row.id===selectedSuggestion.id?{...row,staff_notes:noteDraft.id===row.id?noteDraft.text:row.staff_notes||''}:row));setNotice('Internal notes saved. No email was sent.');}catch(error){setNotice(error.message);}}}>Save Notes</button>
                 <label
                   style={{
                     display: "grid",
                     gap: "8px",
                     color: C.dark,
-                    fontSize: "12px",
+                    fontSize: "14px",
                     fontWeight: 800,
                   }}
                 >

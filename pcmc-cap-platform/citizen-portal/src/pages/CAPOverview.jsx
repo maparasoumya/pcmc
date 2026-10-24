@@ -46,22 +46,22 @@ export default function CAPOverview({ language }) {
 
         <div className="risk-grid">
           <div className="risk-card">
-            <h3>🌡️ {t.capExtremeHeat}</h3>
+            <h3> {t.capExtremeHeat}</h3>
             <p>{t.capExtremeHeatText}</p>     
           </div>
 
           <div className="risk-card">
-            <h3>🌧️ {t.capFlooding}</h3>
+            <h3> {t.capFlooding}</h3>
             <p>{t.capFloodingText}</p>
           </div>
 
           <div className="risk-card">
-            <h3>💧 {t.capWaterStress}</h3>
+            <h3> {t.capWaterStress}</h3>
             <p>{t.capWaterStressText}</p>
           </div>
 
           <div className="risk-card">
-            <h3>🌫️ {t.capAirPollution}</h3>
+            <h3> {t.capAirPollution}</h3>
             <p>{t.capAirPollutionText}</p>
           </div>
         </div>
@@ -183,13 +183,13 @@ export default function CAPOverview({ language }) {
 
         <div className="budget-info">
           <div className="budget-card">
-            <h3>🏛️ {t.capCityBudget}</h3>
+            <h3> {t.capCityBudget}</h3>
             <p>{t.capCityBudgetText}</p>
             <span>{t.capBudgetPending}</span>
           </div>
 
           <div className="budget-card">
-            <h3>🌱 {t.capCAPComponents}</h3>
+            <h3> {t.capCAPComponents}</h3>
             <p>{t.capCAPComponentsText}</p>
             <span>{t.capCAPBudgetPending}</span>
           </div>

@@ -29,7 +29,7 @@ const inputStyle = {
   borderRadius: "9px",
   background: "#FFFFFF",
   color: "#394F49",
-  fontSize: "14px",
+  fontSize: "16px",
   lineHeight: "1.55",
   fontFamily: "inherit",
   outlineColor: "#2F7D4A",
@@ -38,7 +38,7 @@ const inputStyle = {
 const labelStyle = {
   display: "block",
   color: "#394F49",
-  fontSize: "14px",
+  fontSize: "16px",
   fontWeight: "700",
 };
 
@@ -53,7 +53,7 @@ const primaryButtonStyle = {
   background: "#385149",
   color: "#FFFFFF",
   cursor: "pointer",
-  fontSize: "13px",
+  fontSize: "15px",
   fontWeight: "750",
   fontFamily: "inherit",
   transition: "background 150ms ease, border-color 150ms ease",
@@ -228,7 +228,7 @@ export default function ProgressEntry() {
               borderRadius: "20px",
               background: "#E8F3E9",
               color: "#2F7D4A",
-              fontSize: "11px",
+              fontSize: "13px",
               fontWeight: "800",
               letterSpacing: "0.6px",
               marginBottom: "15px",
@@ -241,7 +241,7 @@ export default function ProgressEntry() {
             style={{
               margin: "0 0 10px",
               color: "#394F49",
-              fontSize: "36px",
+              fontSize: "38px",
               lineHeight: "1.2",
               fontWeight: "750",
               letterSpacing: "-0.5px",
@@ -255,7 +255,7 @@ export default function ProgressEntry() {
               margin: 0,
               maxWidth: "720px",
               color: "#65743A",
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: "1.7",
             }}
           >
@@ -274,9 +274,9 @@ export default function ProgressEntry() {
           }}
         >
           {[
-            { label: "Total Records", value: counts.total, icon: "📊" },
-            { label: "On Track", value: counts.onTrack, icon: "🌿" },
-            { label: "Needs Attention", value: counts.attention, icon: "⚠️" },
+            { label: "Total Records", value: counts.total, icon: "" },
+            { label: "On Track", value: counts.onTrack, icon: "" },
+            { label: "Needs Attention", value: counts.attention, icon: "" },
             { label: "Completed", value: counts.completed, icon: "✓" },
           ].map((item) => (
             <article
@@ -300,13 +300,11 @@ export default function ProgressEntry() {
                   "0 4px 14px rgba(57,79,73,0.05)";
               }}
             >
-              <div style={{ fontSize: "22px", marginBottom: "12px" }}>
-                {item.icon}
-              </div>
-              <p style={{ margin: "0 0 6px", color: "#65743A", fontSize: "13px" }}>
+              
+              <p style={{ margin: "0 0 6px", color: "#65743A", fontSize: "15px" }}>
                 {item.label}
               </p>
-              <strong style={{ fontSize: "27px", color: "#394F49" }}>
+              <strong style={{ fontSize: "28px", color: "#394F49" }}>
                 {item.value}
               </strong>
             </article>
@@ -339,7 +337,7 @@ export default function ProgressEntry() {
                 borderRadius: "20px",
                 background: "#E8EEE3",
                 color: "#65743A",
-                fontSize: "10px",
+                fontSize: "12px",
                 fontWeight: "800",
                 letterSpacing: "0.5px",
               }}
@@ -351,13 +349,13 @@ export default function ProgressEntry() {
               style={{
                 margin: "12px 0 7px",
                 color: "#394F49",
-                fontSize: "23px",
+                fontSize: "25px",
               }}
             >
               {editingId !== null ? "Edit Progress Record" : "Add Progress Entry"}
             </h2>
 
-            <p style={{ margin: 0, color: "#65743A", fontSize: "14px", lineHeight: "1.7" }}>
+            <p style={{ margin: 0, color: "#65743A", fontSize: "16px", lineHeight: "1.7" }}>
               Enter goal and target information. You can revise entries before
               integrating the approved data source.
             </p>
@@ -526,7 +524,7 @@ export default function ProgressEntry() {
                   borderRadius: "9px",
                   background: "#E8F3E9",
                   color: "#2F7D4A",
-                  fontSize: "13px",
+                  fontSize: "15px",
                   lineHeight: "1.6",
                   fontWeight: "700",
                 }}
@@ -549,10 +547,10 @@ export default function ProgressEntry() {
             }}
           >
             <div>
-              <h2 style={{ margin: "0 0 8px", color: "#394F49", fontSize: "24px" }}>
+              <h2 style={{ margin: "0 0 8px", color: "#394F49", fontSize: "26px" }}>
                 Progress Records
               </h2>
-              <p style={{ margin: 0, color: "#65743A", fontSize: "14px", lineHeight: "1.6" }}>
+              <p style={{ margin: 0, color: "#65743A", fontSize: "16px", lineHeight: "1.6" }}>
                 {records.length === 0
                   ? "Your saved frontend test records will appear here."
                   : `${records.length} progress record${records.length === 1 ? "" : "s"} in this session.`}
@@ -600,11 +598,11 @@ export default function ProgressEntry() {
                 textAlign: "center",
               }}
             >
-              <div style={{ fontSize: "32px", marginBottom: "12px" }}>📈</div>
-              <h3 style={{ margin: "0 0 8px", color: "#394F49", fontSize: "19px" }}>
+              
+              <h3 style={{ margin: "0 0 8px", color: "#394F49", fontSize: "21px" }}>
                 {records.length === 0 ? "No progress records yet" : "No matching records"}
               </h3>
-              <p style={{ maxWidth: "520px", margin: "0 auto", color: "#65743A", fontSize: "14px", lineHeight: "1.7" }}>
+              <p style={{ maxWidth: "520px", margin: "0 auto", color: "#65743A", fontSize: "16px", lineHeight: "1.7" }}>
                 {records.length === 0
                   ? "Use the form above to add a progress entry and test the available controls."
                   : "Try changing the sector or status filter."}
@@ -657,18 +655,18 @@ export default function ProgressEntry() {
                       alignSelf: "flex-start",
                       padding: "6px 10px",
                       borderRadius: "20px",
-                      fontSize: "11px",
+                      fontSize: "13px",
                       fontWeight: "800",
                     }}
                   >
                     {record.status}
                   </span>
 
-                  <h3 style={{ margin: "15px 0 8px", color: "#394F49", fontSize: "18px", lineHeight: "1.45" }}>
+                  <h3 style={{ margin: "15px 0 8px", color: "#394F49", fontSize: "20px", lineHeight: "1.45" }}>
                     {record.goal}
                   </h3>
 
-                  <p style={{ margin: "0 0 14px", color: "#65743A", fontSize: "13px", lineHeight: "1.6" }}>
+                  <p style={{ margin: "0 0 14px", color: "#65743A", fontSize: "15px", lineHeight: "1.6" }}>
                     <strong>Sector:</strong> {getSectorTitle(record.sectorId)}
                   </p>
 
@@ -700,10 +698,10 @@ export default function ProgressEntry() {
                           background: "#F5F7F6",
                         }}
                       >
-                        <p style={{ margin: "0 0 5px", color: "#65743A", fontSize: "11px" }}>
+                        <p style={{ margin: "0 0 5px", color: "#65743A", fontSize: "13px" }}>
                           {item.label}
                         </p>
-                        <strong style={{ color: "#394F49", fontSize: "13px", overflowWrap: "anywhere" }}>
+                        <strong style={{ color: "#394F49", fontSize: "15px", overflowWrap: "anywhere" }}>
                           {item.value}
                         </strong>
                       </div>
@@ -711,7 +709,7 @@ export default function ProgressEntry() {
                   </div>
 
                   {record.source && (
-                    <p style={{ margin: "0 0 16px", color: "#65743A", fontSize: "12px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
+                    <p style={{ margin: "0 0 16px", color: "#65743A", fontSize: "14px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
                       <strong>Source:</strong> {record.source}
                     </p>
                   )}

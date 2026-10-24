@@ -22,7 +22,7 @@
   --sans: 'Roboto', sans-serif;
   --heading: 'Playfair Display', serif;
 
-  font: 16px/1.5 var(--sans);
+  font: 18px/1.5 var(--sans);
   color: var(--text);
   background: var(--white);
 
@@ -75,19 +75,19 @@ h3 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 59px;
   line-height: 1.1;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 38px;
   line-height: 1.2;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.25;
   font-weight: 600;
 }

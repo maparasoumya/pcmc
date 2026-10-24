@@ -22,7 +22,7 @@
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 16px/145% var(--sans);
+  font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
 
   color: var(--text);
@@ -56,19 +56,19 @@ h3 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 34px;
   letter-spacing: -0.5px;
   margin: 0 0 12px;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 118%;
   margin: 0 0 8px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 p {
@@ -144,13 +144,13 @@ select:focus-visible {
 .admin-header-title {
   margin: 0;
   color: #173b2a;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
 }
 
 .admin-header-subtitle {
   margin: 2px 0 0;
-  font-size: 12px;
+  font-size: 14px;
   color: #6b7d6e;
 }
 
@@ -162,7 +162,7 @@ select:focus-visible {
   border-radius: 20px;
   background-color: #e8f3e9;
   color: #23633b;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -193,7 +193,7 @@ select:focus-visible {
 }
 
 .admin-sidebar-pcmc {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: #2f7d4a;
   letter-spacing: 0.5px;
@@ -203,12 +203,12 @@ select:focus-visible {
 .admin-sidebar-title {
   margin: 4px 0 0;
   color: #173b2a;
-  font-size: 21px;
+  font-size: 23px;
 }
 
 .admin-sidebar-subtitle {
   margin-top: 2px;
-  font-size: 13px;
+  font-size: 15px;
   color: #607565;
 }
 
@@ -227,7 +227,7 @@ select:focus-visible {
   padding: 11px 12px;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   color: #4f5f52;
   background-color: transparent;
@@ -261,11 +261,11 @@ select:focus-visible {
   }
 
   h1 {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -280,16 +280,16 @@ select:focus-visible {
   }
 
   .admin-header-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .admin-header-subtitle {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .admin-header-badge {
     padding: 7px 10px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -315,12 +315,12 @@ select:focus-visible {
   }
 
   .admin-sidebar-pcmc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .admin-sidebar-title {
     margin: 0;
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .admin-sidebar-subtitle {
@@ -343,6 +343,6 @@ select:focus-visible {
   .admin-sidebar-link {
     white-space: nowrap;
     padding: 8px 11px;
-    font-size: 13px;
+    font-size: 15px;
   }
 }

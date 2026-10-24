@@ -11,7 +11,7 @@ const inputStyle = {
   border: "1px solid #DCE3DD",
   borderRadius: "8px",
   outline: "none",
-  fontSize: "14px",
+  fontSize: "16px",
   color: "#394F49",
   background: "#FFFFFF",
 };
@@ -20,7 +20,7 @@ const labelStyle = {
   display: "block",
   marginBottom: "18px",
   color: "#394F49",
-  fontSize: "14px",
+  fontSize: "16px",
   fontWeight: "700",
 };
 
@@ -75,7 +75,7 @@ export default function Login() {
               borderRadius: "20px",
               background: "#E8F3E9",
               color: "#2F7D4A",
-              fontSize: "12px",
+              fontSize: "14px",
               fontWeight: "800",
               letterSpacing: "0.5px",
               marginBottom: "14px",
@@ -88,7 +88,7 @@ export default function Login() {
             style={{
               margin: "0 0 8px",
               color: "#394F49",
-              fontSize: "32px",
+              fontSize: "34px",
               lineHeight: "1.2",
               fontWeight: "750",
             }}
@@ -100,7 +100,7 @@ export default function Login() {
             style={{
               margin: 0,
               color: "#65743A",
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: "1.6",
             }}
           >
@@ -149,7 +149,7 @@ export default function Login() {
                 border: "1px solid #E4CCCC",
                 borderRadius: "8px",
                 color: "#8A4A4A",
-                fontSize: "13px",
+                fontSize: "15px",
               }}
             >
               {error}
@@ -165,7 +165,7 @@ export default function Login() {
               borderRadius: "8px",
               background: "#394F49",
               color: "#FFFFFF",
-              fontSize: "14px",
+              fontSize: "16px",
               fontWeight: "750",
               cursor: "pointer",
             }}
@@ -179,7 +179,7 @@ export default function Login() {
             margin: "20px 0 0",
             textAlign: "center",
             color: "#65743A",
-            fontSize: "11px",
+            fontSize: "13px",
             lineHeight: "1.5",
           }}
         >

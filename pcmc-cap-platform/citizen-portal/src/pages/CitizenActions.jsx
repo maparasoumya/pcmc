@@ -20,7 +20,7 @@ export default function CitizenActions({ language }) {
         <div className="actions-grid">
 
           <div className="action-card">
-            <h3>🏠 {t.atHome}</h3>
+            <h3> {t.atHome}</h3>
             <ul>
               <li>{t.saveElectricity}</li>
               <li>{t.conserveWater}</li>
@@ -29,7 +29,7 @@ export default function CitizenActions({ language }) {
           </div>
 
           <div className="action-card">
-            <h3>🚶 {t.travel}</h3>
+            <h3> {t.travel}</h3>
             <ul>
               <li>{t.walkCycle}</li>
               <li>{t.usePublicTransport}</li>
@@ -38,7 +38,7 @@ export default function CitizenActions({ language }) {
           </div>
 
           <div className="action-card">
-            <h3>🌱 {t.greenNeighbourhood}</h3>
+            <h3> {t.greenNeighbourhood}</h3>
             <ul>
               <li>{t.plantTrees}</li>
               <li>{t.supportGreenSpaces}</li>
@@ -47,7 +47,7 @@ export default function CitizenActions({ language }) {
           </div>
 
           <div className="action-card">
-            <h3>♻️ {t.manageWaste}</h3>
+            <h3> {t.manageWaste}</h3>
             <ul>
               <li>{t.separateWaste}</li>
               <li>{t.compostWaste}</li>
@@ -56,7 +56,7 @@ export default function CitizenActions({ language }) {
           </div>
 
           <div className="action-card">
-            <h3>💧 {t.saveWater}</h3>
+            <h3> {t.saveWater}</h3>
             <ul>
               <li>{t.waterCarefully}</li>
               <li>{t.rainwaterHarvesting}</li>
@@ -65,7 +65,7 @@ export default function CitizenActions({ language }) {
           </div>
 
           <div className="action-card">
-            <h3>🤝 {t.joinCommunity}</h3>
+            <h3> {t.joinCommunity}</h3>
             <ul>
               <li>{t.cleanupPlantation}</li>
               <li>{t.climateEvents}</li>

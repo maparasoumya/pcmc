@@ -52,7 +52,7 @@
   background:rgba(255,255,255,.08);
   border:1px solid rgba(255,255,255,.14);
   border-radius:22px;
-  font-size:42px;
+  font-size:44px;
 }
 
 .sector-label {
@@ -60,7 +60,7 @@
   margin-bottom:13px;
   color:var(--warm-yellow);
   font-family:var(--sans);
-  font-size:10px;
+  font-size:12px;
   font-weight:700;
   letter-spacing:1.8px;
 }
@@ -79,7 +79,7 @@
   margin:0 auto;
   color:rgba(255,255,255,.72);
   font-family:var(--sans);
-  font-size:16px;
+  font-size:18px;
   line-height:1.65;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .visual-circle span {
-  font-size:76px;
+  font-size:80px;
 }
 
 .visual-dots {
@@ -140,7 +140,7 @@
 .sector-section-heading span {
   color:var(--orange);
   font-family:var(--sans);
-  font-size:12px;
+  font-size:14px;
   font-weight:700;
   letter-spacing:1px;
 }
@@ -149,14 +149,14 @@
   margin:8px 0 16px;
   color:var(--dark-teal);
   font-family:var(--heading);
-  font-size:34px;
+  font-size:36px;
 }
 
 .sector-feature-text p {
   margin:0;
   color:var(--text-light);
   font-family:var(--sans);
-  font-size:16px;
+  font-size:18px;
   line-height:1.75;
 }
 
@@ -178,7 +178,7 @@
   margin:0;
   color:var(--dark-teal);
   font-family:var(--heading);
-  font-size:31px;
+  font-size:33px;
   font-weight:600;
 }
 
@@ -196,7 +196,7 @@
 .why-mark {
   color:var(--warm-yellow);
   font-family:Georgia,serif;
-  font-size:60px;
+  font-size:63px;
   line-height:.8;
 }
 
@@ -204,7 +204,7 @@
   margin:3px 0 0;
   color:var(--text-light);
   font-family:var(--sans);
-  font-size:15px;
+  font-size:17px;
   line-height:1.7;
 }
 
@@ -238,20 +238,20 @@
 .action-number {
   color:var(--orange);
   font-family:var(--sans);
-  font-size:12px;
+  font-size:14px;
   font-weight:700;
 }
 
 .action-text {
   color:var(--text);
   font-family:var(--sans);
-  font-size:14px;
+  font-size:16px;
   line-height:1.55;
 }
 
 .action-arrow {
   color:var(--olive-green);
-  font-size:20px;
+  font-size:22px;
 }
 
 /* citizen actions */
@@ -296,14 +296,14 @@
 .citizen-icon {
   display:block;
   margin-bottom:14px;
-  font-size:25px;
+  font-size:26px;
 }
 
 .citizen-action p {
   margin:0;
   color:rgba(255,255,255,.82);
   font-family:var(--sans);
-  font-size:13px;
+  font-size:15px;
   line-height:1.55;
 }
 
@@ -338,13 +338,13 @@
   border-radius:20px;
   color:var(--text);
   font-family:var(--sans);
-  font-size:12px;
+  font-size:14px;
 }
 
 .location-list p {
   margin:0;
   color:var(--text-light);
-  font-size:13px;
+  font-size:15px;
 }
 
 .map-link {
@@ -354,13 +354,13 @@
   gap:9px;
   color:var(--orange);
   font-family:var(--sans);
-  font-size:13px;
+  font-size:15px;
   font-weight:700;
   text-decoration:none;
 }
 
 .map-link span {
-  font-size:18px;
+  font-size:20px;
   transition:transform .2s ease;
 }
 
@@ -378,7 +378,7 @@
 .sector-bottom a {
   color:var(--deep-green);
   font-family:var(--sans);
-  font-size:13px;
+  font-size:15px;
   font-weight:700;
   text-decoration:none;
 }
@@ -436,7 +436,7 @@
   }
 
   .sector-hero h1 {
-    font-size:46px;
+    font-size:48px;
   }
 
   .sector-feature-section,
@@ -457,7 +457,7 @@
 
   .sector-feature-text h2,
   .sector-section-heading h2 {
-    font-size:28px;
+    font-size:29px;
   }
 
   .citizen-section {

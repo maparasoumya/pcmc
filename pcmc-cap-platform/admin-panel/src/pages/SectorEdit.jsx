@@ -5,16 +5,6 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import mockContent from "../data/mockContent.json";
 
-const sectorIcons = {
-  "rising-heat": "☀️",
-  "flooding-water-logging": "🌧️",
-  "solid-waste-management": "♻️",
-  "green-city-biodiversity": "🌳",
-  "sustainable-mobility": "🚲",
-  "renewable-energy": "⚡",
-  "water-security-conservation": "💧",
-  "clean-air-healthy-life": "🌿",
-};
 
 function toDisplayText(value) {
   if (Array.isArray(value)) return value.join("\n");
@@ -42,7 +32,7 @@ const inputStyle = {
   borderRadius: "9px",
   background: "#FFFFFF",
   color: "#394F49",
-  fontSize: "14px",
+  fontSize: "16px",
   lineHeight: "1.55",
   fontFamily: "inherit",
   outlineColor: "#2F7D4A",
@@ -52,7 +42,7 @@ const labelStyle = {
   display: "block",
   marginBottom: "23px",
   color: "#394F49",
-  fontSize: "14px",
+  fontSize: "16px",
   fontWeight: "700",
 };
 
@@ -84,7 +74,7 @@ const badgeStyle = {
   borderRadius: "20px",
   background: "#E8F3E9",
   color: "#2F7D4A",
-  fontSize: "11px",
+  fontSize: "13px",
   fontWeight: "800",
   letterSpacing: "0.6px",
 };
@@ -93,7 +83,7 @@ const backLinkStyle = {
   display: "inline-block",
   color: "#65743A",
   textDecoration: "none",
-  fontSize: "13px",
+  fontSize: "15px",
   fontWeight: "700",
 };
 
@@ -108,7 +98,7 @@ const buttonStyle = {
   color: "#FFFFFF",
   cursor: "pointer",
   fontWeight: "750",
-  fontSize: "13px",
+  fontSize: "15px",
   fontFamily: "inherit",
   transition: "background 150ms ease, border-color 150ms ease",
 };
@@ -159,7 +149,7 @@ function SectorEditForm({sector,serverRow,sectorId}) {
           <h1
             style={{
               margin: "15px 0 10px",
-              fontSize: "30px",
+              fontSize: "32px",
               color: "#394F49",
             }}
           >
@@ -257,22 +247,7 @@ function SectorEditForm({sector,serverRow,sectorId}) {
             marginBottom: "30px",
           }}
         >
-          <div
-            aria-hidden="true"
-            style={{
-              width: "58px",
-              height: "58px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderRadius: "14px",
-              background: "#E8EEE3",
-              fontSize: "28px",
-              flexShrink: 0,
-            }}
-          >
-            {sectorIcons[sectorId] || "🌱"}
-          </div>
+          
 
           <div>
             <span style={badgeStyle}>CLIMATE SECTORS</span>
@@ -280,7 +255,7 @@ function SectorEditForm({sector,serverRow,sectorId}) {
               style={{
                 margin: "12px 0 10px",
                 color: "#394F49",
-                fontSize: "36px",
+                fontSize: "38px",
                 lineHeight: "1.2",
                 fontWeight: "750",
                 letterSpacing: "-0.5px",
@@ -292,7 +267,7 @@ function SectorEditForm({sector,serverRow,sectorId}) {
               style={{
                 margin: 0,
                 color: "#65743A",
-                fontSize: "15px",
+                fontSize: "17px",
                 lineHeight: "1.7",
               }}
             >
@@ -325,7 +300,7 @@ function SectorEditForm({sector,serverRow,sectorId}) {
               style={{
                 margin: "12px 0 8px",
                 color: "#394F49",
-                fontSize: "23px",
+                fontSize: "25px",
                 lineHeight: "1.4",
               }}
             >
@@ -336,7 +311,7 @@ function SectorEditForm({sector,serverRow,sectorId}) {
               style={{
                 margin: 0,
                 color: "#65743A",
-                fontSize: "14px",
+                fontSize: "16px",
                 lineHeight: "1.7",
               }}
             >
@@ -352,13 +327,13 @@ function SectorEditForm({sector,serverRow,sectorId}) {
                 background: "#F5F7F6",
                 border: "1px solid #DCE3DD",
                 borderRadius: "10px",
-                fontSize: "14px",
+                fontSize: "16px",
               }}
             >
               <p
                 style={{
                   margin: "0 0 5px",
-                  fontSize: "10px",
+                  fontSize: "12px",
                   color: "#65743A",
                   fontWeight: "800",
                   letterSpacing: "0.5px",
@@ -454,7 +429,7 @@ function SectorEditForm({sector,serverRow,sectorId}) {
                     messageType === "success" ? "#E8F3E9" : "#FFF8E7",
                   color:
                     messageType === "success" ? "#2F7D4A" : "#725D20",
-                  fontSize: "13px",
+                  fontSize: "15px",
                   lineHeight: "1.6",
                   fontWeight: "700",
                 }}

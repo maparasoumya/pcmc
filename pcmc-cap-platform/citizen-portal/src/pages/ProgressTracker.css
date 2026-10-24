@@ -54,7 +54,7 @@
   margin: 0 auto;
   color: var(--text-light);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -70,7 +70,7 @@
   margin: 0 0 18px;
   color: var(--dark-teal);
   font-family: var(--heading);
-  font-size: 28px;
+  font-size: 29px;
   font-weight: 600;
 }
 
@@ -88,14 +88,14 @@
   margin-bottom: 5px;
   color: var(--warm-yellow);
   font-family: var(--heading);
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 600;
 }
 
 .overall-progress p {
   margin: 0;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -123,7 +123,7 @@
   display: block;
   margin-top: 7px;
   color: rgba(255, 255, 255, 0.68);
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
 }
 
@@ -159,14 +159,14 @@
   margin: 0 0 9px;
   color: var(--dark-teal);
   font-family: var(--heading);
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 600;
 }
 
 .progress-card p {
   margin: 0;
   color: var(--text-light);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -226,7 +226,7 @@
   display: block;
   margin-top: 6px;
   color: var(--text-light);
-  font-size: 11px;
+  font-size: 13px;
   text-align: right;
 }
 
@@ -246,7 +246,7 @@
   border-radius: 20px;
   color: var(--dark-teal);
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -264,11 +264,11 @@
   }
 
   .progress-hero h1 {
-    font-size: 40px;
+    font-size: 42px;
   }
 
   .progress-hero p {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .progress-section {
@@ -276,7 +276,7 @@
   }
 
   .progress-section h2 {
-    font-size: 25px;
+    font-size: 26px;
   }
 
   .overall-progress {

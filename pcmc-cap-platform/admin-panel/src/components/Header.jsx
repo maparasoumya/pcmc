@@ -31,7 +31,7 @@ export default function Header() {
           borderRadius: "8px",
           background: "#E8EEE3",
           color: "#394F49",
-          fontSize: "13px",
+          fontSize: "15px",
           fontWeight: "600",
           cursor: "pointer",
         }}

@@ -54,7 +54,7 @@
   margin: 0 auto;
   color: var(--text-light);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -80,7 +80,7 @@
   margin: 0 0 14px;
   color: var(--warm-yellow);
   font-family: var(--heading);
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -96,7 +96,7 @@
   background: rgba(255, 255, 255, 0.08);
   color: var(--white);
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 15px;
   cursor: pointer;
   transition:
     background 0.2s ease,
@@ -130,7 +130,7 @@
   margin: 0 0 12px;
   color: var(--warm-yellow);
   font-family: var(--heading);
-  font-size: 21px;
+  font-size: 23px;
 }
 
 .flood-risk-area {
@@ -139,7 +139,7 @@
   padding: 6px 10px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.09);
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .flood-risk-panel small {
@@ -147,7 +147,7 @@
   max-width: 850px;
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.70);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -188,11 +188,11 @@
   }
 
   .map-header h1 {
-    font-size: 40px;
+    font-size: 42px;
   }
 
   .map-header p {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .map-container {

@@ -20,7 +20,7 @@
 .event-banner-label {
   flex-shrink: 0;
   color: var(--warm-yellow);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 1.5px;
 }
@@ -34,14 +34,14 @@
   margin: 0 0 5px;
   color: var(--white);
   font-family: var(--heading);
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.3;
 }
 
 .event-banner-text p {
   margin: 0;
   color: rgba(247, 239, 202, 0.85);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -54,7 +54,7 @@
   background: var(--warm-yellow);
   color: var(--dark-teal);
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.2s ease;
@@ -105,7 +105,7 @@
   border-radius: 50%;
   background: transparent;
   color: var(--dark-teal);
-  font-size: 30px;
+  font-size: 32px;
   line-height: 1;
   cursor: pointer;
 }
@@ -116,7 +116,7 @@
 
 .event-popup-eyebrow {
   color: var(--orange);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 2px;
 }
@@ -130,7 +130,7 @@
   margin: 22px auto;
   border-radius: 50%;
   background: var(--warm-yellow);
-  font-size: 34px;
+  font-size: 36px;
 }
 
 .event-popup h2 {
@@ -145,7 +145,7 @@
   margin: 0 auto 25px;
   max-width: 380px;
   color: var(--text-light);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.8;
 }
 
@@ -157,7 +157,7 @@
   display: block;
   margin-top: 20px;
   color: var(--text-light);
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -194,7 +194,7 @@
   }
 
   .event-banner-text h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .event-banner-button {

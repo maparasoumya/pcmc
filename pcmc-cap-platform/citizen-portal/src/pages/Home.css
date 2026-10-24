@@ -165,7 +165,7 @@
 
   color: var(--text-light);
 
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
 }
 
@@ -235,7 +235,7 @@
   .hero-tagline {
     margin-top: 20px;
 
-    font-size: 16px;
+    font-size: 18px;
 
     line-height: 1.55;
   }
@@ -253,7 +253,7 @@
   }
 
   .sectors-section h2 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .sector-grid {
@@ -280,7 +280,7 @@
   display: inline-block;
   margin-bottom: 12px;
   color: var(--orange);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -296,7 +296,7 @@
 .cee-activities-heading > p {
   margin: 0;
   color: var(--text-light);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
 }
 
@@ -325,7 +325,7 @@
   background: #e8ebdc;
   color: var(--deep-green);
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -335,7 +335,7 @@
 
 .cee-activity-tag {
   color: var(--orange);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -344,14 +344,14 @@
   margin: 12px 0 10px;
   color: var(--dark-teal);
   font-family: var(--heading);
-  font-size: 23px;
+  font-size: 25px;
   line-height: 1.3;
 }
 
 .cee-activity-content p {
   margin: 0;
   color: var(--text-light);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -366,7 +366,7 @@
   align-items: center;
   gap: 10px;
   color: var(--dark-teal);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   border-bottom: 2px solid var(--yellow);

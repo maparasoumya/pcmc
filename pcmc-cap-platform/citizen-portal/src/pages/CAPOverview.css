@@ -42,7 +42,7 @@
 
   font-family: var(--sans);
 
-  font-size: 12px;
+  font-size: 14px;
 
   font-weight: 600;
 
@@ -89,7 +89,7 @@
 
   font-family: var(--sans);
 
-  font-size: 17px;
+  font-size: 19px;
 
   line-height: 1.75;
 }
@@ -171,14 +171,14 @@
   .cap-hero p {
     max-width: 90%;
 
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .cap-hero-year {
     right: -20px;
     top: 30px;
 
-    font-size: 130px;
+    font-size: 137px;
   }
 
   .cap-hero-shape {
@@ -225,7 +225,7 @@
 
   color: var(--text-light);
 
-  font-size: 16px;
+  font-size: 18px;
 
   line-height: 1.8;
 }
@@ -312,7 +312,7 @@
 
   font-family: var(--heading);
 
-  font-size: 22px;
+  font-size: 24px;
 
   line-height: 1.3;
 }
@@ -322,7 +322,7 @@
 
   color: var(--text-light);
 
-  font-size: 14px;
+  font-size: 16px;
 
   line-height: 1.7;
 }
@@ -373,7 +373,7 @@
 
   color: var(--warm-yellow);
 
-  font-size: 12px;
+  font-size: 14px;
 
   font-weight: 600;
 
@@ -387,7 +387,7 @@
 
   color: rgba(247,239,202,0.65);
 
-  font-size: 14px;
+  font-size: 16px;
 
   line-height: 1.7;
 }
@@ -442,7 +442,7 @@
 
   font-family: var(--heading);
 
-  font-size: 20px;
+  font-size: 22px;
 
   font-weight: 500;
 }
@@ -452,7 +452,7 @@
 
   color: var(--cream);
 
-  font-size: 12px;
+  font-size: 14px;
 
   font-weight: 600;
 
@@ -468,7 +468,7 @@
 
   color: rgba(247,239,202,0.58);
 
-  font-size: 13px;
+  font-size: 15px;
 
   line-height: 1.6;
 }
@@ -547,7 +547,7 @@
 
   color: var(--dark-teal);
 
-  font-size: 16px;
+  font-size: 18px;
 
   font-weight: 500;
 
@@ -566,7 +566,7 @@
 
   color: var(--orange);
 
-  font-size: 18px;
+  font-size: 20px;
 
   font-weight: 600;
 }
@@ -628,7 +628,7 @@
 
   font-family: var(--heading);
 
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .budget-card p {
@@ -636,7 +636,7 @@
 
   color: var(--text-light);
 
-  font-size: 14px;
+  font-size: 16px;
 
   line-height: 1.7;
 }
@@ -652,7 +652,7 @@
 
   color: var(--brown);
 
-  font-size: 12px;
+  font-size: 14px;
 
   font-weight: 600;
 }
@@ -695,7 +695,7 @@
   }
 
   .cap-hero p {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .cap-section {

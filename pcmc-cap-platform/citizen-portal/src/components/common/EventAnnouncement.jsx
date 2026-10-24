@@ -76,9 +76,7 @@ export default function EventAnnouncement({ language }) {
             </span>
 
             {event&&safeUrl(event.data.image)&&<img src={safeUrl(event.data.image)} alt={event.title} style={{width:'100%',maxHeight:250,objectFit:'contain'}}/>}
-            <div className="event-popup-icon" aria-hidden="true">
-              <span>🌿</span>
-            </div>
+
 
             <h2 id="event-popup-title">{event?localText({...event.data,title:event.title},'title',language):t.eventPopupTitle}</h2>
             <p>{event?localText(event.data,'description',language):t.eventPopupDescription}</p>

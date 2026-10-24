@@ -214,7 +214,7 @@ export default function ClimateMap({ language }) {
               >
 
               <Popup>
-                <strong>🌊 {area.name}</strong>
+                <strong> {area.name}</strong>
 
                 <br />
 
@@ -238,7 +238,7 @@ export default function ClimateMap({ language }) {
                 position={area.coordinates}
               >
                 <Popup>
-                  <strong>🌡️ {area.name}</strong>
+                  <strong> {area.name}</strong>
 
                   <br />
 
@@ -262,7 +262,7 @@ export default function ClimateMap({ language }) {
               >
                 <Popup>
 
-                  <strong>♻️ {site.siteName}</strong>
+                  <strong> {site.siteName}</strong>
 
                   <br /><br />
 
@@ -299,7 +299,7 @@ export default function ClimateMap({ language }) {
               position={stp.coordinates}
             >
               <Popup>
-                <strong>🚰 {stp.name}</strong>
+                <strong> {stp.name}</strong>
 
                 <br />
 
@@ -322,7 +322,7 @@ export default function ClimateMap({ language }) {
                 position={project.coordinates}
               >
                 <Popup>
-                  <strong>🌱 {project.name}</strong>
+                  <strong> {project.name}</strong>
 
                   <br /><br />
 

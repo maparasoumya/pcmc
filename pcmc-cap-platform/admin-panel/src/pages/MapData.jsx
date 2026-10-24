@@ -6,43 +6,43 @@ import { useMemo, useState } from "react";
 const mapLayers = [
   {
     name: "Flooding / Water Logging",
-    icon: "🌧️",
+    icon: "",
     description: "Record waterlogging locations and flood-prone areas.",
     color: "#E8F0FA",
   },
   {
     name: "Heat",
-    icon: "☀️",
+    icon: "",
     description: "Document heat-affected areas and local observations.",
     color: "#FFF1DF",
   },
   {
     name: "Green Spaces",
-    icon: "🌳",
+    icon: "",
     description: "Manage parks, green cover, and open spaces.",
     color: "#E8F3E9",
   },
   {
     name: "Water Infrastructure",
-    icon: "💧",
+    icon: "",
     description: "Record water infrastructure and related concerns.",
     color: "#E7F4F8",
   },
   {
     name: "Waste Infrastructure",
-    icon: "♻️",
+    icon: "",
     description: "Manage waste facilities and infrastructure records.",
     color: "#F0EDFA",
   },
   {
     name: "Mobility",
-    icon: "🚲",
+    icon: "",
     description: "Document mobility, transport, and accessibility.",
     color: "#FBEAE8",
   },
   {
     name: "PCMC Climate Projects",
-    icon: "🏗️",
+    icon: "",
     description: "Track climate-related projects and their locations.",
     color: "#F3EFDF",
   },
@@ -83,7 +83,7 @@ const buttonBase = {
   padding: "10px 15px",
   border: "1px solid transparent",
   borderRadius: "8px",
-  fontSize: "13px",
+  fontSize: "15px",
   fontWeight: 750,
   cursor: "pointer",
   fontFamily: "inherit",
@@ -98,7 +98,7 @@ const inputBase = {
   borderRadius: "9px",
   background: C.white,
   color: C.dark,
-  fontSize: "14px",
+  fontSize: "16px",
   fontFamily: "inherit",
   outlineColor: C.fern,
 };
@@ -161,7 +161,7 @@ function Field({ label, children, hint }) {
         gap: "8px",
         alignContent: "start",
         color: C.dark,
-        fontSize: "13px",
+        fontSize: "15px",
         fontWeight: 700,
         minWidth: 0,
       }}
@@ -171,7 +171,7 @@ function Field({ label, children, hint }) {
       {hint && (
         <span
           style={{
-            fontSize: "11px",
+            fontSize: "13px",
             color: C.muted,
             fontWeight: 400,
           }}
@@ -220,9 +220,6 @@ export default function MapData() {
     (record) => record.status !== "Verified"
   ).length;
 
-  const selectedLayerDetails = mapLayers.find(
-    (layer) => layer.name === selectedLayer
-  );
 
   function resetForm() {
     setForm({ ...emptyForm });
@@ -399,7 +396,7 @@ export default function MapData() {
               borderRadius: "20px",
               background: C.greenBg,
               color: C.greenText,
-              fontSize: "11px",
+              fontSize: "13px",
               fontWeight: 800,
               letterSpacing: "0.6px",
               marginBottom: "15px",
@@ -412,7 +409,7 @@ export default function MapData() {
             style={{
               margin: "0 0 10px",
               color: C.dark,
-              fontSize: "36px",
+              fontSize: "38px",
               lineHeight: 1.2,
               fontWeight: 750,
               letterSpacing: "-0.5px",
@@ -426,7 +423,7 @@ export default function MapData() {
               margin: 0,
               maxWidth: "720px",
               color: C.fern,
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: 1.7,
             }}
           >
@@ -451,12 +448,12 @@ export default function MapData() {
                   style={{
                     margin: "0 0 6px",
                     color: C.dark,
-                    fontSize: "23px",
+                    fontSize: "25px",
                   }}
                 >
                   Choose a map layer
                 </h2>
-                <p style={{ margin: 0, color: C.muted, fontSize: "13px" }}>
+                <p style={{ margin: 0, color: C.muted, fontSize: "15px" }}>
                   Select a card to open its workspace.
                 </p>
               </div>
@@ -468,7 +465,7 @@ export default function MapData() {
                   background: C.white,
                   border: `1px solid ${C.border}`,
                   color: C.fern,
-                  fontSize: "12px",
+                  fontSize: "14px",
                   fontWeight: 750,
                 }}
               >
@@ -562,20 +559,7 @@ export default function MapData() {
                         gap: "10px",
                       }}
                     >
-                      <div
-                        aria-hidden="true"
-                        style={{
-                          width: "48px",
-                          height: "48px",
-                          display: "grid",
-                          placeItems: "center",
-                          borderRadius: "13px",
-                          background: layer.color,
-                          fontSize: "24px",
-                        }}
-                      >
-                        {layer.icon}
-                      </div>
+                      
 
                       <span
                         style={{
@@ -583,7 +567,7 @@ export default function MapData() {
                           borderRadius: "20px",
                           background: count ? C.greenBg : C.bg,
                           color: count ? C.greenText : C.muted,
-                          fontSize: "11px",
+                          fontSize: "13px",
                           fontWeight: 750,
                           whiteSpace: "nowrap",
                         }}
@@ -596,7 +580,7 @@ export default function MapData() {
                       <h3
                         style={{
                           margin: "0 0 7px",
-                          fontSize: "17px",
+                          fontSize: "19px",
                           lineHeight: 1.4,
                           fontWeight: 750,
                         }}
@@ -608,7 +592,7 @@ export default function MapData() {
                         style={{
                           margin: 0,
                           color: C.muted,
-                          fontSize: "13px",
+                          fontSize: "15px",
                           lineHeight: 1.65,
                         }}
                       >
@@ -629,13 +613,13 @@ export default function MapData() {
                         borderRadius: "8px",
                         background: "#385149",
                         color: "#FFFFFF",
-                        fontSize: "14px",
+                        fontSize: "16px",
                         fontWeight: 600,
                         transition: "all 0.2s ease",
                       }}
                     >
                       View
-                      <span aria-hidden="true" style={{ fontSize: "18px" }}>
+                      <span aria-hidden="true" style={{ fontSize: "20px" }}>
                         →
                       </span>
                     </div>
@@ -657,7 +641,7 @@ export default function MapData() {
                 color: C.fern,
               }}
             >
-              <span aria-hidden="true" style={{ fontSize: "18px" }}>
+              <span aria-hidden="true" style={{ fontSize: "20px" }}>
                 ←
               </span>
               Back to all layers
@@ -672,28 +656,14 @@ export default function MapData() {
                 marginBottom: "23px",
               }}
             >
-              <div
-                aria-hidden="true"
-                style={{
-                  width: "60px",
-                  height: "60px",
-                  flexShrink: 0,
-                  display: "grid",
-                  placeItems: "center",
-                  borderRadius: "16px",
-                  background: selectedLayerDetails?.color || C.sage,
-                  fontSize: "29px",
-                }}
-              >
-                {selectedLayerDetails?.icon}
-              </div>
+              
 
               <div style={{ flex: "1 1 240px" }}>
                 <p
                   style={{
                     margin: "0 0 5px",
                     color: C.fern,
-                    fontSize: "11px",
+                    fontSize: "13px",
                     fontWeight: 800,
                     letterSpacing: "0.7px",
                   }}
@@ -719,7 +689,7 @@ export default function MapData() {
                   border: `1px solid ${C.border}`,
                   borderRadius: "10px",
                   color: C.fern,
-                  fontSize: "12px",
+                  fontSize: "14px",
                   fontWeight: 750,
                 }}
               >
@@ -736,7 +706,7 @@ export default function MapData() {
                   borderRadius: "9px",
                   background: C.greenBg,
                   color: C.greenText,
-                  fontSize: "13px",
+                  fontSize: "15px",
                   lineHeight: 1.6,
                 }}
               >
@@ -772,12 +742,12 @@ export default function MapData() {
                     style={{
                       margin: "0 0 9px",
                       color: C.fern,
-                      fontSize: "12px",
+                      fontSize: "14px",
                     }}
                   >
                     {stat.label}
                   </p>
-                  <strong style={{ color: C.dark, fontSize: "27px" }}>
+                  <strong style={{ color: C.dark, fontSize: "28px" }}>
                     {stat.value}
                   </strong>
                 </div>
@@ -799,7 +769,7 @@ export default function MapData() {
                     style={{
                       margin: "0 0 7px",
                       color: C.fern,
-                      fontSize: "11px",
+                      fontSize: "13px",
                       fontWeight: 800,
                       letterSpacing: "0.6px",
                     }}
@@ -811,7 +781,7 @@ export default function MapData() {
                     style={{
                       margin: "0 0 8px",
                       color: C.dark,
-                      fontSize: "22px",
+                      fontSize: "24px",
                     }}
                   >
                     {editingId ? "Edit record" : "Add information"}
@@ -821,7 +791,7 @@ export default function MapData() {
                     style={{
                       margin: "0 0 23px",
                       color: C.muted,
-                      fontSize: "13px",
+                      fontSize: "15px",
                       lineHeight: 1.65,
                     }}
                   >
@@ -838,7 +808,7 @@ export default function MapData() {
                         borderRadius: "9px",
                         background: C.redBg,
                         color: C.red,
-                        fontSize: "12px",
+                        fontSize: "14px",
                         lineHeight: 1.5,
                       }}
                     >
@@ -977,7 +947,7 @@ export default function MapData() {
                       style={{
                         margin: "0 0 6px",
                         color: C.dark,
-                        fontSize: "22px",
+                        fontSize: "24px",
                       }}
                     >
                       Saved records
@@ -986,7 +956,7 @@ export default function MapData() {
                       style={{
                         margin: 0,
                         color: C.muted,
-                        fontSize: "12px",
+                        fontSize: "14px",
                         lineHeight: 1.6,
                       }}
                     >
@@ -1000,7 +970,7 @@ export default function MapData() {
                       color: C.fern,
                       borderRadius: "9px",
                       padding: "7px 10px",
-                      fontSize: "11px",
+                      fontSize: "13px",
                       fontWeight: 800,
                     }}
                   >
@@ -1028,16 +998,16 @@ export default function MapData() {
                   >
                     <div
                       aria-hidden="true"
-                      style={{ fontSize: "29px", marginBottom: "11px" }}
+                      style={{ fontSize: "30px", marginBottom: "11px" }}
                     >
-                      {search ? "🔎" : "📋"}
+                      {search ? "" : ""}
                     </div>
 
                     <strong
                       style={{
                         display: "block",
                         color: C.dark,
-                        fontSize: "15px",
+                        fontSize: "17px",
                         marginBottom: "7px",
                       }}
                     >
@@ -1048,7 +1018,7 @@ export default function MapData() {
                       style={{
                         margin: 0,
                         color: C.muted,
-                        fontSize: "12px",
+                        fontSize: "14px",
                         lineHeight: 1.6,
                       }}
                     >
@@ -1094,7 +1064,7 @@ export default function MapData() {
                             style={{
                               margin: 0,
                               color: C.dark,
-                              fontSize: "15px",
+                              fontSize: "17px",
                               lineHeight: 1.5,
                               overflowWrap: "anywhere",
                             }}
@@ -1107,7 +1077,7 @@ export default function MapData() {
                               ...statusStyle(record.status),
                               padding: "5px 8px",
                               borderRadius: "20px",
-                              fontSize: "10px",
+                              fontSize: "12px",
                               fontWeight: 800,
                             }}
                           >
@@ -1119,7 +1089,7 @@ export default function MapData() {
                           style={{
                             margin: "10px 0 8px",
                             color: C.fern,
-                            fontSize: "12px",
+                            fontSize: "14px",
                             lineHeight: 1.5,
                             overflowWrap: "anywhere",
                           }}
@@ -1132,7 +1102,7 @@ export default function MapData() {
                           style={{
                             margin: 0,
                             color: C.muted,
-                            fontSize: "12px",
+                            fontSize: "14px",
                             lineHeight: 1.7,
                             whiteSpace: "pre-wrap",
                             overflowWrap: "anywhere",

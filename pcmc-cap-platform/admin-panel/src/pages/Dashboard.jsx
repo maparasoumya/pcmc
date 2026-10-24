@@ -6,49 +6,49 @@ const dashboardItems = [
     title: "Sectors",
     description: "Manage climate action sectors and their priorities.",
     path: "/sectors",
-    icon: "🌿",
+    icon: "",
   },
   {
     title: "Projects",
     description: "Review and manage climate action projects.",
     path: "/projects",
-    icon: "📋",
+    icon: "",
   },
   {
     title: "Progress & Targets",
     description: "Track goals, targets, and progress updates.",
     path: "/progress",
-    icon: "📈",
+    icon: "",
   },
   {
     title: "Map Data",
     description: "Explore climate layers and map information.",
     path: "/map-data",
-    icon: "🗺️",
+    icon: "",
   },
   {
     title: "Resources",
     description: "Manage reports, plans, and awareness materials.",
     path: "/resources",
-    icon: "📚",
+    icon: "",
   },
   {
     title: "Events",
     description: "Manage climate action events and activities.",
     path: "/events",
-    icon: "📅",
+    icon: "",
   },
   {
     title: "Suggestions",
     description: "Review citizen suggestions when available.",
     path: "/suggestions",
-    icon: "💬",
+    icon: "",
   },
   {
     title: "Admin Settings",
     description: "Review administration and platform settings.",
     path: "/admin-settings",
-    icon: "⚙️",
+    icon: "",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function Dashboard() {
             borderRadius: "20px",
             background: "#E8F3E9",
             color: "#2F7D4A",
-            fontSize: "11px",
+            fontSize: "13px",
             fontWeight: "800",
             letterSpacing: "0.6px",
             marginBottom: "15px",
@@ -84,7 +84,7 @@ export default function Dashboard() {
           style={{
             margin: "0 0 10px",
             color: "#394F49",
-            fontSize: "36px",
+            fontSize: "38px",
             lineHeight: "1.2",
             fontWeight: "750",
             letterSpacing: "-0.5px",
@@ -97,7 +97,7 @@ export default function Dashboard() {
           style={{
             maxWidth: "720px",
             color: "#65743A",
-            fontSize: "15px",
+            fontSize: "17px",
             lineHeight: "1.7",
           }}
         >
@@ -161,30 +161,14 @@ export default function Dashboard() {
             />
 
             {/* Card icon */}
-            <div
-              aria-hidden="true"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "50px",
-                height: "50px",
-                marginBottom: "18px",
-                borderRadius: "12px",
-                background: "#E8EEE3",
-                fontSize: "25px",
-                flexShrink: 0,
-              }}
-            >
-              {item.icon}
-            </div>
+            
 
             {/* Card title */}
             <h2
               style={{
                 margin: "0 0 8px",
                 color: "#394F49",
-                fontSize: "19px",
+                fontSize: "21px",
                 lineHeight: "1.4",
                 fontWeight: "750",
               }}
@@ -197,7 +181,7 @@ export default function Dashboard() {
               style={{
                 margin: "0 0 18px",
                 color: "#65743A",
-                fontSize: "13px",
+                fontSize: "15px",
                 lineHeight: "1.7",
               }}
             >
@@ -216,7 +200,7 @@ export default function Dashboard() {
                 borderRadius: "7px",
                 color: "#FFFFFF",
                 background: "#385149",
-                fontSize: "13px",
+                fontSize: "15px",
                 fontWeight: "750",
                 transition:
                   "background 150ms ease, border-color 150ms ease",

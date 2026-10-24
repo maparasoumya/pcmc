@@ -24,7 +24,7 @@ const inputStyle = {
   borderRadius: "9px",
   background: "#FFFFFF",
   color: "#394F49",
-  fontSize: "14px",
+  fontSize: "16px",
   lineHeight: "1.55",
   fontFamily: "inherit",
   outlineColor: "#2F7D4A",
@@ -33,7 +33,7 @@ const inputStyle = {
 const labelStyle = {
   display: "block",
   color: "#394F49",
-  fontSize: "14px",
+  fontSize: "16px",
   fontWeight: "700",
 };
 
@@ -47,7 +47,7 @@ const primaryButtonStyle = {
   background: "#385149",
   color: "#FFFFFF",
   cursor: "pointer",
-  fontSize: "13px",
+  fontSize: "15px",
   fontWeight: "750",
   fontFamily: "inherit",
   transition: "background 150ms ease, border-color 150ms ease",
@@ -220,7 +220,7 @@ export default function Projects() {
               borderRadius: "20px",
               background: "#E8F3E9",
               color: "#2F7D4A",
-              fontSize: "11px",
+              fontSize: "13px",
               fontWeight: "800",
               letterSpacing: "0.6px",
               marginBottom: "15px",
@@ -233,7 +233,7 @@ export default function Projects() {
             style={{
               margin: "0 0 10px",
               color: "#394F49",
-              fontSize: "36px",
+              fontSize: "38px",
               lineHeight: "1.2",
               fontWeight: "750",
               letterSpacing: "-0.5px",
@@ -247,7 +247,7 @@ export default function Projects() {
               margin: 0,
               maxWidth: "720px",
               color: "#65743A",
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: "1.7",
             }}
           >
@@ -266,10 +266,10 @@ export default function Projects() {
           }}
         >
           {[
-            { label: "Total Projects", value: counts.total, icon: "📋" },
-            { label: "Draft", value: counts.draft, icon: "📝" },
-            { label: "Published", value: counts.published, icon: "🌿" },
-            { label: "Archived", value: counts.archived, icon: "📦" },
+            { label: "Total Projects", value: counts.total, icon: "" },
+            { label: "Draft", value: counts.draft, icon: "" },
+            { label: "Published", value: counts.published, icon: "" },
+            { label: "Archived", value: counts.archived, icon: "" },
           ].map((item) => (
             <article
               key={item.label}
@@ -292,19 +292,17 @@ export default function Projects() {
                   "0 4px 14px rgba(57,79,73,0.05)";
               }}
             >
-              <div style={{ fontSize: "22px", marginBottom: "12px" }}>
-                {item.icon}
-              </div>
+              
               <p
                 style={{
                   margin: "0 0 6px",
                   color: "#65743A",
-                  fontSize: "13px",
+                  fontSize: "15px",
                 }}
               >
                 {item.label}
               </p>
-              <strong style={{ fontSize: "27px", color: "#394F49" }}>
+              <strong style={{ fontSize: "28px", color: "#394F49" }}>
                 {item.value}
               </strong>
             </article>
@@ -337,7 +335,7 @@ export default function Projects() {
                 borderRadius: "20px",
                 background: "#E8EEE3",
                 color: "#65743A",
-                fontSize: "10px",
+                fontSize: "12px",
                 fontWeight: "800",
                 letterSpacing: "0.5px",
               }}
@@ -349,7 +347,7 @@ export default function Projects() {
               style={{
                 margin: "12px 0 7px",
                 color: "#394F49",
-                fontSize: "23px",
+                fontSize: "25px",
               }}
             >
               {editingId !== null ? "Edit Project" : "Add Project"}
@@ -359,7 +357,7 @@ export default function Projects() {
               style={{
                 margin: 0,
                 color: "#65743A",
-                fontSize: "14px",
+                fontSize: "16px",
                 lineHeight: "1.7",
               }}
             >
@@ -470,7 +468,7 @@ export default function Projects() {
                   background: "#E8F3E9",
                   border: "1px solid #CFE5D2",
                   color: "#2F7D4A",
-                  fontSize: "13px",
+                  fontSize: "15px",
                   fontWeight: "700",
                   lineHeight: "1.6",
                 }}
@@ -497,7 +495,7 @@ export default function Projects() {
                 style={{
                   margin: "0 0 8px",
                   color: "#394F49",
-                  fontSize: "24px",
+                  fontSize: "26px",
                 }}
               >
                 Project Records
@@ -506,7 +504,7 @@ export default function Projects() {
                 style={{
                   margin: 0,
                   color: "#65743A",
-                  fontSize: "14px",
+                  fontSize: "16px",
                   lineHeight: "1.6",
                 }}
               >
@@ -545,14 +543,12 @@ export default function Projects() {
                 boxShadow: "0 4px 14px rgba(57,79,73,0.05)",
               }}
             >
-              <div style={{ fontSize: "32px", marginBottom: "12px" }}>
-                📋
-              </div>
+              
               <h3
                 style={{
                   margin: "0 0 8px",
                   color: "#394F49",
-                  fontSize: "19px",
+                  fontSize: "21px",
                 }}
               >
                 {projects.length === 0
@@ -564,7 +560,7 @@ export default function Projects() {
                   maxWidth: "520px",
                   margin: "0 auto",
                   color: "#65743A",
-                  fontSize: "14px",
+                  fontSize: "16px",
                   lineHeight: "1.7",
                 }}
               >
@@ -634,7 +630,7 @@ export default function Projects() {
                           : project.status === "Archived"
                             ? "#65716A"
                             : "#8A6A1D",
-                      fontSize: "11px",
+                      fontSize: "13px",
                       fontWeight: "800",
                     }}
                   >
@@ -645,7 +641,7 @@ export default function Projects() {
                     style={{
                       margin: "15px 0 8px",
                       color: "#394F49",
-                      fontSize: "19px",
+                      fontSize: "21px",
                       lineHeight: "1.4",
                       overflowWrap: "anywhere",
                     }}
@@ -657,7 +653,7 @@ export default function Projects() {
                     style={{
                       margin: "0 0 12px",
                       color: "#65743A",
-                      fontSize: "13px",
+                      fontSize: "15px",
                       lineHeight: "1.6",
                     }}
                   >
@@ -670,7 +666,7 @@ export default function Projects() {
                       style={{
                         margin: "0 0 18px",
                         color: "#65743A",
-                        fontSize: "13px",
+                        fontSize: "15px",
                         lineHeight: "1.7",
                         whiteSpace: "pre-wrap",
                         overflowWrap: "anywhere",
@@ -684,7 +680,7 @@ export default function Projects() {
                     style={{
                       ...labelStyle,
                       marginTop: "auto",
-                      fontSize: "12px",
+                      fontSize: "14px",
                     }}
                   >
                     Update Status

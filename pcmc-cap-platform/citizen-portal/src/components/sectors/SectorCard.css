@@ -68,7 +68,7 @@
 
   color: var(--dark-teal);
 
-  font-size: 25px;
+  font-size: 26px;
 
   box-shadow:
     0 5px 15px rgba(11, 47, 49, 0.08);
@@ -86,7 +86,7 @@
 
   font-family: var(--heading);
 
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
 
   line-height: 1.25;
@@ -102,7 +102,7 @@
 
   color: var(--text-light);
 
-  font-size: 14px;
+  font-size: 16px;
 
   line-height: 1.65;
 }
@@ -119,7 +119,7 @@
 
   font-family: var(--sans);
 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 
   transition:

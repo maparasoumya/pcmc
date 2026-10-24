@@ -16,7 +16,7 @@ const C = {
 const sections = [
   {
     title: "Backend & Data Sources",
-    icon: "🗄️",
+    icon: "",
     status: "Configuration Required",
     description:
       "Manage backend connections and data sources used by the admin panel.",
@@ -28,7 +28,7 @@ const sections = [
   },
   {
     title: "Access & Security",
-    icon: "🔐",
+    icon: "",
     status: "Review Settings",
     description:
       "Review access and security settings for the admin workspace.",
@@ -40,7 +40,7 @@ const sections = [
   },
   {
     title: "Data Import & Export",
-    icon: "📁",
+    icon: "",
     status: "Available for Setup",
     description:
       "Manage options for importing and exporting administrative data.",
@@ -52,7 +52,7 @@ const sections = [
   },
   {
     title: "Platform Configuration",
-    icon: "⚙️",
+    icon: "",
     status: "Configuration Required",
     description:
       "Review general platform settings and administrative preferences.",
@@ -112,7 +112,7 @@ export default function AdminSettings() {
             style={{
               margin: "0 0 8px",
               color: C.dark,
-              fontSize: 36,
+              fontSize: 38,
               fontWeight: 600,
               letterSpacing: "-0.8px",
             }}
@@ -124,7 +124,7 @@ export default function AdminSettings() {
             style={{
               margin: 0,
               color: C.muted,
-              fontSize: 15,
+              fontSize: 17,
               lineHeight: 1.6,
             }}
           >
@@ -138,7 +138,7 @@ export default function AdminSettings() {
             style={{
               margin: "0 0 6px",
               color: C.dark,
-              fontSize: 23,
+              fontSize: 25,
               fontWeight: 600,
             }}
           >
@@ -149,7 +149,7 @@ export default function AdminSettings() {
             style={{
               margin: 0,
               color: C.muted,
-              fontSize: 14,
+              fontSize: 16,
               lineHeight: 1.6,
             }}
           >
@@ -185,28 +185,14 @@ export default function AdminSettings() {
                     marginBottom: 20,
                   }}
                 >
-                  <div
-                    style={{
-                      width: 54,
-                      height: 54,
-                      minWidth: 54,
-                      borderRadius: 13,
-                      background: C.lightGreen,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      fontSize: 24,
-                    }}
-                  >
-                    {section.icon}
-                  </div>
+                  
 
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <h3
                       style={{
                         margin: "4px 0 10px",
                         color: C.dark,
-                        fontSize: 19,
+                        fontSize: 21,
                         fontWeight: 600,
                         lineHeight: 1.4,
                       }}
@@ -221,7 +207,7 @@ export default function AdminSettings() {
                         borderRadius: 7,
                         background: C.lightGreen,
                         color: C.green,
-                        fontSize: 12,
+                        fontSize: 14,
                         fontWeight: 500,
                         lineHeight: 1.5,
                       }}
@@ -236,7 +222,7 @@ export default function AdminSettings() {
                   style={{
                     margin: "0 0 22px",
                     color: C.muted,
-                    fontSize: 15,
+                    fontSize: 17,
                     lineHeight: 1.8,
                   }}
                 >
@@ -256,7 +242,7 @@ export default function AdminSettings() {
                       style={{
                         margin: "0 0 12px",
                         color: C.dark,
-                        fontSize: 15,
+                        fontSize: 17,
                         fontWeight: 600,
                       }}
                     >
@@ -268,7 +254,7 @@ export default function AdminSettings() {
                         margin: 0,
                         paddingLeft: 21,
                         color: C.muted,
-                        fontSize: 14,
+                        fontSize: 16,
                         lineHeight: 1.9,
                       }}
                     >
@@ -297,7 +283,7 @@ export default function AdminSettings() {
                     border: "none",
                     background: C.buttonDark,
                     color: C.white,
-                    fontSize: 15,
+                    fontSize: 17,
                     fontWeight: 600,
                     cursor: "pointer",
                     transition: "background 150ms ease",

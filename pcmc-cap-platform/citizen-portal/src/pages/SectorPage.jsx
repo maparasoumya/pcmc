@@ -52,7 +52,7 @@ export default function SectorPage({ language }) {
       {/* hero */}
       <section className="sector-hero">
         <div className="sector-hero-content">
-          <div className="sector-page-icon">{sector.icon}</div>
+          
 
           <span className="sector-label">
             {t.sectorLabel}
@@ -81,7 +81,7 @@ export default function SectorPage({ language }) {
       <section className="sector-feature-section">
         <div className="sector-feature-visual">
           <div className="visual-circle">
-            <span>{sector.icon}</span>
+            <span></span>
           </div>
 
           <div className="visual-dots"></div>
@@ -141,9 +141,7 @@ export default function SectorPage({ language }) {
           <div className="citizen-actions-grid">
             {citizenActions.map((action, index) => (
               <div className="citizen-action" key={index}>
-                <span className="citizen-icon">
-                  {["🌱", "💧", "🌿", "🤝", "⚡"][index % 5]}
-                </span>
+                
 
                 <p>{action}</p>
               </div>

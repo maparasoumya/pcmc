@@ -2,16 +2,6 @@
 import { Link } from "react-router-dom";
 import mockContent from "../data/mockContent.json";
 
-const sectorIcons = {
-  "rising-heat": "☀️",
-  "flooding-water-logging": "🌧️",
-  "solid-waste-management": "♻️",
-  "green-city-biodiversity": "🌳",
-  "sustainable-mobility": "🚲",
-  "renewable-energy": "⚡",
-  "water-security-conservation": "💧",
-  "clean-air-healthy-life": "🌿",
-};
 
 export default function Sectors() {
   const sectors = Array.isArray(mockContent) ? mockContent : [];
@@ -36,7 +26,7 @@ export default function Sectors() {
               borderRadius: "20px",
               background: "#E8F3E9",
               color: "#2F7D4A",
-              fontSize: "11px",
+              fontSize: "13px",
               fontWeight: "800",
               letterSpacing: "0.6px",
               marginBottom: "15px",
@@ -49,7 +39,7 @@ export default function Sectors() {
             style={{
               margin: "0 0 10px",
               color: "#394F49",
-              fontSize: "36px",
+              fontSize: "38px",
               lineHeight: "1.2",
               fontWeight: "750",
               letterSpacing: "-0.5px",
@@ -63,7 +53,7 @@ export default function Sectors() {
               maxWidth: "720px",
               margin: 0,
               color: "#65743A",
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: "1.7",
             }}
           >
@@ -149,30 +139,14 @@ export default function Sectors() {
                 />
 
                 {/* Sector icon */}
-                <div
-                  aria-hidden="true"
-                  style={{
-                    width: "58px",
-                    height: "58px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginBottom: "19px",
-                    borderRadius: "14px",
-                    background: "#E8EEE3",
-                    fontSize: "28px",
-                    flexShrink: 0,
-                  }}
-                >
-                  {sectorIcons[sector.id] || "🌱"}
-                </div>
+                
 
                 {/* Sector title */}
                 <h2
                   style={{
                     margin: "0 0 9px",
                     color: "#394F49",
-                    fontSize: "18px",
+                    fontSize: "20px",
                     lineHeight: "1.4",
                     fontWeight: "750",
                     overflowWrap: "anywhere",
@@ -186,7 +160,7 @@ export default function Sectors() {
                   style={{
                     margin: "0 0 18px",
                     color: "#65743A",
-                    fontSize: "12px",
+                    fontSize: "14px",
                     lineHeight: "1.5",
                     flex: 1,
                     overflowWrap: "anywhere",
@@ -211,7 +185,7 @@ export default function Sectors() {
                     background: "#385149",
                     color: "#FFFFFF",
                     textDecoration: "none",
-                    fontSize: "13px",
+                    fontSize: "15px",
                     fontWeight: "750",
                     transition:
                       "background 150ms ease, border-color 150ms ease",

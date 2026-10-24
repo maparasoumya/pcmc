@@ -22,7 +22,7 @@
 .about-cee-eyebrow {
   margin: 0 0 14px;
   color: var(--orange);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -41,7 +41,7 @@
   max-width: 680px;
   margin: 24px 0 0;
   color: var(--text-light);
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.8;
 }
 
@@ -92,13 +92,13 @@
 .about-cee-content-placeholder h3 {
   margin: 0 0 12px;
   color: var(--deep-green);
-  font-size: 19px;
+  font-size: 21px;
 }
 
 .about-cee-content-placeholder p {
   margin: 0;
   color: var(--text-light);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.8;
 }
 

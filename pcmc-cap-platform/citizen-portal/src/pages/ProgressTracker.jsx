@@ -39,7 +39,7 @@ export default function ProgressTracker({ language }) {
         <div className="progress-grid">
 
           <div className="progress-card">
-            <h3>🔥 {t.risingHeat}</h3>
+            <h3> {t.risingHeat}</h3>
 
             <div className="progress-bar">
               <div className="progress-fill" style={{width:`${percent("rising-heat")}%`}}></div>
@@ -49,7 +49,7 @@ export default function ProgressTracker({ language }) {
           </div>
 
           <div className="progress-card">
-            <h3>🌊 {t.flooding}</h3>
+            <h3> {t.flooding}</h3>
 
             <div className="progress-bar">
               <div className="progress-fill" style={{width:`${percent("flooding-water-logging")}%`}}></div>
@@ -59,7 +59,7 @@ export default function ProgressTracker({ language }) {
           </div>
 
           <div className="progress-card">
-            <h3>♻️ {t.solidWaste}</h3>
+            <h3> {t.solidWaste}</h3>
 
             <div className="progress-bar">
               <div className="progress-fill" style={{width:`${percent("solid-waste-management")}%`}}></div>
@@ -69,7 +69,7 @@ export default function ProgressTracker({ language }) {
           </div>
 
           <div className="progress-card">
-            <h3>🌳 {t.greenCity}</h3>
+            <h3> {t.greenCity}</h3>
 
             <div className="progress-bar">
               <div className="progress-fill" style={{width:`${percent("green-city-biodiversity")}%`}}></div>
@@ -79,7 +79,7 @@ export default function ProgressTracker({ language }) {
           </div>
 
           <div className="progress-card">
-            <h3>🚌 {t.sustainableMobility}</h3>
+            <h3> {t.sustainableMobility}</h3>
 
             <div className="progress-bar">
               <div className="progress-fill" style={{width:`${percent("sustainable-mobility")}%`}}></div>
@@ -89,7 +89,7 @@ export default function ProgressTracker({ language }) {
           </div>
 
           <div className="progress-card">
-            <h3>☀️ {t.renewableEnergy}</h3>
+            <h3> {t.renewableEnergy}</h3>
 
             <div className="progress-bar">
               <div className="progress-fill" style={{width:`${percent("renewable-energy")}%`}}></div>
@@ -99,7 +99,7 @@ export default function ProgressTracker({ language }) {
           </div>
 
           <div className="progress-card">
-            <h3>💧 {t.waterConservation}</h3>
+            <h3> {t.waterConservation}</h3>
 
             <div className="progress-bar">
               <div className="progress-fill" style={{width:`${percent("water-security-conservation")}%`}}></div>
@@ -109,7 +109,7 @@ export default function ProgressTracker({ language }) {
           </div>
 
           <div className="progress-card">
-            <h3>🌫️ {t.cleanAir}</h3>
+            <h3> {t.cleanAir}</h3>
 
             <div className="progress-bar">
               <div className="progress-fill" style={{width:`${percent("clean-air-healthy-life")}%`}}></div>

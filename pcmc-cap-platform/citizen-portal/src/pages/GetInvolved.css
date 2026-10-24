@@ -46,7 +46,7 @@
   border-radius: 25px;
   color: var(--warm-yellow);
   font-family: var(--sans);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -69,7 +69,7 @@
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.74);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -91,7 +91,7 @@
 .section-heading span {
   color: var(--orange);
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -100,7 +100,7 @@
   margin: 0;
   color: var(--dark-teal);
   font-family: var(--heading);
-  font-size: 31px;
+  font-size: 33px;
   font-weight: 600;
 }
 
@@ -147,7 +147,7 @@
   margin-bottom: 13px;
   border-radius: 10px;
   background: var(--cream);
-  font-size: 21px;
+  font-size: 23px;
 }
 
 .involved-card h3 {
@@ -156,7 +156,7 @@
   margin: 0 0 8px;
   color: var(--dark-teal);
   font-family: var(--heading);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -166,7 +166,7 @@
   margin: 0 0 12px;
   color: var(--text-light);
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -177,7 +177,7 @@
   z-index: 1;
   color: var(--text-light);
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 13px;
   font-style: italic;
 }
 
@@ -239,14 +239,14 @@
   justify-content: center;
   border-radius: 12px;
   background: var(--orange);
-  font-size: 25px;
+  font-size: 26px;
 }
 
 .event-placeholder h3 {
   margin: 0 0 7px;
   color: var(--warm-yellow);
   font-family: var(--heading);
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .event-placeholder p {
@@ -254,7 +254,7 @@
   margin: 0 0 8px;
   color: rgba(255, 255, 255, 0.70);
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -284,14 +284,14 @@
 
 .registration-icon {
   margin-bottom: 8px;
-  font-size: 34px;
+  font-size: 36px;
 }
 
 .registration-content h2 {
   margin: 0 0 10px;
   color: var(--dark-teal);
   font-family: var(--heading);
-  font-size: 31px;
+  font-size: 33px;
 }
 
 .registration-content p {
@@ -299,7 +299,7 @@
   margin: 0 auto 12px;
   color: var(--text-light);
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -321,11 +321,11 @@
   }
 
   .involved-hero h1 {
-    font-size: 48px;
+    font-size: 50px;
   }
 
   .involved-hero p {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .involved-section {
@@ -333,7 +333,7 @@
   }
 
   .section-heading h2 {
-    font-size: 28px;
+    font-size: 29px;
   }
 
   .involved-card {
@@ -355,6 +355,6 @@
   }
 
   .registration-content h2 {
-    font-size: 28px;
+    font-size: 29px;
   }
 }

@@ -23,7 +23,7 @@ const inputStyle = {
   borderRadius: "9px",
   background: "#FFFFFF",
   color: "#394F49",
-  fontSize: "14px",
+  fontSize: "16px",
   lineHeight: "1.5",
   outlineColor: "#385149",
   fontFamily: "inherit",
@@ -32,7 +32,7 @@ const inputStyle = {
 const labelStyle = {
   display: "block",
   color: "#394F49",
-  fontSize: "14px",
+  fontSize: "16px",
   fontWeight: "700",
 };
 
@@ -43,7 +43,7 @@ const primaryButtonStyle = {
   background: "#385149",
   color: "#FFFFFF",
   cursor: "pointer",
-  fontSize: "14px",
+  fontSize: "16px",
   fontWeight: "600",
   fontFamily: "inherit",
   transition: "all 0.2s ease",
@@ -229,9 +229,9 @@ export default function Resources() {
   };
 
   const statCards = [
-    { label: "Total Resources", value: counts.total, icon: "📊" },
-    { label: "Published", value: counts.published, icon: "🌿" },
-    { label: "Drafts", value: counts.drafts, icon: "📝" },
+    { label: "Total Resources", value: counts.total, icon: "" },
+    { label: "Published", value: counts.published, icon: "" },
+    { label: "Drafts", value: counts.drafts, icon: "" },
     { label: "Archived", value: counts.archived, icon: "✓" },
   ];
 
@@ -257,7 +257,7 @@ export default function Resources() {
               borderRadius: "20px",
               background: "#E8F3E9",
               color: "#2F7D4A",
-              fontSize: "11px",
+              fontSize: "13px",
               fontWeight: "800",
               letterSpacing: "0.6px",
               marginBottom: "15px",
@@ -270,7 +270,7 @@ export default function Resources() {
             style={{
               margin: "0 0 10px",
               color: "#394F49",
-              fontSize: "36px",
+              fontSize: "38px",
               lineHeight: "1.2",
               fontWeight: "750",
               letterSpacing: "-0.5px",
@@ -284,7 +284,7 @@ export default function Resources() {
               margin: 0,
               maxWidth: "720px",
               color: "#65743A",
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: "1.7",
             }}
           >
@@ -326,21 +326,13 @@ export default function Resources() {
                   "0 4px 14px rgba(57,79,73,0.05)";
               }}
             >
-              <div
-                style={{
-                  fontSize: "22px",
-                  marginBottom: "12px",
-                  lineHeight: "1",
-                }}
-              >
-                {item.icon}
-              </div>
+              
 
               <p
                 style={{
                   margin: "0 0 12px",
                   color: "#65743A",
-                  fontSize: "13px",
+                  fontSize: "15px",
                   fontWeight: "400",
                 }}
               >
@@ -350,7 +342,7 @@ export default function Resources() {
               <div
                 style={{
                   color: "#394F49",
-                  fontSize: "27px",
+                  fontSize: "28px",
                   lineHeight: "1.2",
                   fontWeight: "400",
                   letterSpacing: "0",
@@ -386,7 +378,7 @@ export default function Resources() {
               style={{
                 margin: "0 0 7px",
                 color: "#394F49",
-                fontSize: "24px",
+                fontSize: "26px",
               }}
             >
               {editingId !== null ? "Edit Resource" : "Add Resource"}
@@ -396,7 +388,7 @@ export default function Resources() {
               style={{
                 margin: 0,
                 color: "#65743A",
-                fontSize: "14px",
+                fontSize: "16px",
                 lineHeight: "1.6",
               }}
             >
@@ -482,7 +474,7 @@ export default function Resources() {
                   borderRadius: "9px",
                   background: "#E8F3E9",
                   color: "#2F7D4A",
-                  fontSize: "13px",
+                  fontSize: "15px",
                   lineHeight: "1.6",
                 }}
               >
@@ -546,7 +538,7 @@ export default function Resources() {
                 style={{
                   margin: "0 0 8px",
                   color: "#394F49",
-                  fontSize: "24px",
+                  fontSize: "26px",
                 }}
               >
                 Resource Records
@@ -556,7 +548,7 @@ export default function Resources() {
                 style={{
                   margin: 0,
                   color: "#65743A",
-                  fontSize: "14px",
+                  fontSize: "16px",
                   lineHeight: "1.6",
                 }}
               >
@@ -567,7 +559,7 @@ export default function Resources() {
             <span
               style={{
                 color: "#394F49",
-                fontSize: "14px",
+                fontSize: "16px",
                 fontWeight: "400",
               }}
             >
@@ -635,15 +627,13 @@ export default function Resources() {
                 textAlign: "center",
               }}
             >
-              <div style={{ fontSize: "30px", marginBottom: "12px" }}>
-                📚
-              </div>
+              
 
               <h3
                 style={{
                   margin: "0 0 8px",
                   color: "#394F49",
-                  fontSize: "20px",
+                  fontSize: "22px",
                 }}
               >
                 {resources.length === 0
@@ -656,7 +646,7 @@ export default function Resources() {
                   maxWidth: "540px",
                   margin: "0 auto",
                   color: "#65743A",
-                  fontSize: "14px",
+                  fontSize: "16px",
                   lineHeight: "1.7",
                 }}
               >
@@ -716,7 +706,7 @@ export default function Resources() {
                           borderRadius: "20px",
                           background: "#E8F3E9",
                           color: "#2F7D4A",
-                          fontSize: "11px",
+                          fontSize: "13px",
                           fontWeight: "700",
                         }}
                       >
@@ -729,7 +719,7 @@ export default function Resources() {
                           display: "inline-flex",
                           padding: "5px 9px",
                           borderRadius: "20px",
-                          fontSize: "11px",
+                          fontSize: "13px",
                           fontWeight: "700",
                         }}
                       >
@@ -741,7 +731,7 @@ export default function Resources() {
                       style={{
                         margin: "0 0 10px",
                         color: "#394F49",
-                        fontSize: "19px",
+                        fontSize: "21px",
                         overflowWrap: "anywhere",
                       }}
                     >
@@ -752,7 +742,7 @@ export default function Resources() {
                       style={{
                         margin: "0 0 15px",
                         color: "#65743A",
-                        fontSize: "14px",
+                        fontSize: "16px",
                         lineHeight: "1.7",
                         whiteSpace: "pre-wrap",
                         overflowWrap: "anywhere",
@@ -766,7 +756,7 @@ export default function Resources() {
                         style={{
                           margin: "0 0 18px",
                           color: "#65743A",
-                          fontSize: "13px",
+                          fontSize: "15px",
                           lineHeight: "1.6",
                           overflowWrap: "anywhere",
                         }}

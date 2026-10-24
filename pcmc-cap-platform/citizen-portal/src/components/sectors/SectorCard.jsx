@@ -18,9 +18,7 @@ export default function SectorCard({ sector, language }) {
 
   return (
     <div className="sector-card">
-      <div className="sector-icon">
-        {sector.icon}
-      </div>
+      
 
       <h3>{t[sectorTranslationKeys[sector.id]]}</h3>
 

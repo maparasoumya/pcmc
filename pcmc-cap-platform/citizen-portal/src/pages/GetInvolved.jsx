@@ -33,7 +33,7 @@ export default function GetInvolved({ language }) {
         <div className="involved-grid">
 
           <div className="involved-card suggestion-card">
-            <div className="card-icon">💡</div>
+            
 
             <h3>{t.shareSuggestion}</h3>
 
@@ -49,7 +49,7 @@ export default function GetInvolved({ language }) {
           </div>
 
           <div className="involved-card query-card">
-            <div className="card-icon">❓</div>
+            
 
             <h3>{t.askQuery}</h3>
 
@@ -75,10 +75,10 @@ export default function GetInvolved({ language }) {
             <h2>{t.upcomingEvents}</h2>
           </div>
 
-          {upcoming.map(row=><div className="event-placeholder" key={row.id}><div className="event-icon">📅</div><div><h3>{row.title}</h3><p>{localText(row.data,'description',language)}</p><span>{new Date(row.data.date).toLocaleDateString(language==='mr'?'mr-IN':'en-IN')} · {row.data.location}</span></div></div>)}
+          {upcoming.map(row=><div className="event-placeholder" key={row.id}><div><h3>{row.title}</h3><p>{localText(row.data,'description',language)}</p><span>{new Date(row.data.date).toLocaleDateString(language==='mr'?'mr-IN':'en-IN')} · {row.data.location}</span></div></div>)}
           {!upcoming.length&&<div className="event-placeholder">
 
-            <div className="event-icon">📅</div>
+            
 
             <div>
               <h3>{t.climateEventsTitle}</h3>
@@ -103,7 +103,7 @@ export default function GetInvolved({ language }) {
         <div className="involved-grid">
 
           <div className="involved-card community-card">
-            <div className="card-icon">🌱</div>
+            
 
             <h3>{t.joinLocalActivities}</h3>
 
@@ -111,7 +111,7 @@ export default function GetInvolved({ language }) {
           </div>
 
           <div className="involved-card community-card">
-            <div className="card-icon">🤝</div>
+            
 
             <h3>{t.volunteer}</h3>
 
@@ -128,7 +128,7 @@ export default function GetInvolved({ language }) {
 
         <div className="registration-content">
 
-          <div className="registration-icon">🌍</div>
+          
 
           <h2>{t.registerActivities}</h2>
 
