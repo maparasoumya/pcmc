@@ -2,14 +2,14 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { list, request } from './api';
 const statusToServer={'New':'new','Under Review':'review','Responded':'responded','Archived':'archived'};
 const statusFromServer=Object.fromEntries(Object.entries(statusToServer).map(([a,b])=>[b,a]));
-const layerNames={'Flooding / Water Logging':'floodRisk','Heat':'heatRisk','Heat Risk':'heatRisk','Green Spaces':'greenSpaces','Water Infrastructure':'water','Waste Infrastructure':'waste','Mobility':'mobility','PCMC Climate Projects':'projects','Pedestrian-Friendly Streets':'pedestrianStreets','Municipal Buildings':'municipalBuildings'};
+const layerNames={'Flooding / Water Logging':'floodRisk','Heat':'heatRisk','Heat Risk':'heatRisk','Heat Risk Area':'heatRisk','Green Spaces':'greenSpaces','Water Infrastructure':'water','Waste Infrastructure':'waste','Mobility':'mobility','PCMC Climate Projects':'projects','Pedestrian-Friendly Streets':'pedestrianStreets','Municipal Buildings':'municipalBuildings'};
 const reverseLayers=Object.fromEntries(Object.entries(layerNames).map(([a,b])=>[b,a]));
 function decode(kind,row){
  if(kind==='vendors')return {...row,title:row.name,category:String(row.category),description:row.notes||'',source:row.address,url:row.urlfield||'',status:row.is_active?'Published':'Archived'};
  if(kind==='submissions')return {...row,status:statusFromServer[row.status]||row.status,createdAt:row.created_at,category:row.kind==='query'?'Query':'Suggestion',demo:false};
  return {...row.data,id:row.id,_slug:row.slug,title:row.title,name:row.data.name||row.title,
   ...(kind==='events'?{date:row.data.uiDate||row.data.date?.slice(0,10)||'',posterUrl:row.data.image||row.data.posterUrl||''}:{}),
-  ...(kind==='map'?{layer:row.data.uiLayer==='Heat'?'Heat Risk':row.data.uiLayer||reverseLayers[row.data.layer]||row.data.layer}:{}),
+  ...(kind==='map'?{layer:['Heat','Heat Risk'].includes(row.data.uiLayer)?'Heat Risk Area':row.data.uiLayer||reverseLayers[row.data.layer]||row.data.layer}:{}),
   status:row.data.uiStatus||row.data.status||(row.status==='published'?(kind==='map'?'Verified':'Published'):'Draft')};
 }
 function encode(kind,row){

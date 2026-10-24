@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 
 const mapLayers = [
   {
-    name: "Heat Risk",
+    name: "Heat Risk Area",
     icon: "",
     description: "Document heat-affected areas and local observations.",
     color: "#FFF1DF",
